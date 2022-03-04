@@ -1,0 +1,448 @@
+
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Zen Kaku Gothic Antique';
+  background: radial-gradient(ellipse at bottom, #001526 70%,#00070d 100% );
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+}
+
+/* ========================================== */
+/*              ALL LINKS STYLES              */
+/* ========================================== */
+a{
+  color:#7cff78;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.link{
+
+  position: relative;
+
+}
+.link:after{
+  content: "";
+  position: absolute;
+  background-color:#ff0090;
+  height: 3px;
+  width: 0;
+  left: 0;
+  transition: 0.5s;
+  bottom: -10px;
+}
+
+.link:hover:after{
+  width: 100%;
+}
+a:hover{
+  color:#7cff78;
+}
+/* ====================   */
+/* Title styles          */
+/* ===================== */
+
+.main-title{
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: Arial;
+}
+
+hr{
+  color: green;
+  font-weight: bolder;
+  padding-bottom: 1px;
+}
+/* ========================================== */
+/*              LINING STYLES                 */
+/* ========================================== */
+.line{
+  background-color: #03fca9;
+  padding-bottom: 0.1rem;
+  width: 10rem;
+  margin: auto;
+}
+.line-container{
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+/* ========================================== */
+/*      PAGE CONTAINER/ SECTIONS STYLES       */
+/* ========================================== */
+
+.row{
+  position: relative;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding-top: 50px;
+}
+
+
+.section-container{
+  margin: auto;
+  position: relative;
+}
+
+/* ========================================== */
+/*               EMPHASIZE STYLES             */
+/* ========================================== */
+.emphasize{
+  color:#47eafc;
+}
+/* ========================================== */
+/*               NAV BAR STYLES             */
+/* ========================================== */
+
+.navbar{
+  width:100%;
+  background-color: rgba(0, 38, 77, 0.5);
+  height: auto;
+  padding-left: 20px;
+
+  z-index: 1;
+}
+.nav-container{
+  margin: auto;
+}
+.navbar-brand{
+  color: #f7902f;
+  margin: auto;
+  letter-spacing: 10px;
+  position: absolute;
+}
+.nav-link{
+  font-size: 0.8em;
+  color: white;
+  transition: 1s;
+}
+.nav-link:hover{
+  color: #f7902f;
+  font-weight: bolder;
+}
+.navbar-nav{
+  text-align: center;
+  margin: auto;
+}
+/* ========================================== */
+/*               HOME PAGE STYLES             */
+/* ========================================== */
+
+.home-container{
+  text-align: center;
+  position: relative;
+  color:#ffffff;
+  height: 100vh;
+  background-image: url("/images/bg.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrapper{
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.opening-text-container{
+  padding-top: 60px;
+  padding-bottom:100px;
+}
+
+.name{
+  font-size: 20px;
+  padding: 100px 5px 5px 5px;
+  margin:auto;
+  letter-spacing: 5px;
+
+}
+
+.main-header{
+  color: #ffc73b;
+  font-size: 3.2em;
+  font-family: Verdana;
+  font-weight: bolder;
+  /* background: -webkit-linear-gradient(#346ff7, #ff0090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-shadow:
+  1px 1px 1px #402f06,
+        1px 2px 1px #402f06,
+        1px 3px 1px #402f06,
+        1px 4px 1px #402f06,
+        1px 5px 1px #402f06,
+        1px 6px 1px #402f06,
+        1px 7px 1px #402f06,
+        1px 8px 1px #402f06,
+        1px 9px 1px #402f06,
+        1px 10px 1px #402f06,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    animation: change-color 1.5s infinite;
+
+}
+
+@keyframes show{
+  from {top: -30px;}
+  to {top: 0px; opacity:100%;}
+}
+
+.divider{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.starting-paragraph{
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.motto{
+  letter-spacing: 2px;
+}
+/* ========================================== */
+/*          INFORMATION SECTION STYLES        */
+/* ========================================== */
+#info-section{
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.information-container{
+  max-width: 1100px;
+  position: relative;
+  margin:auto;
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding: 20px 50px 30px 50px;
+}
+.opening-title
+{
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.supporting-par{
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #edfffe;
+  padding-bottom: 3em;
+}
+.opening-paragraph{
+  color:white;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 2.2rem;
+  letter-spacing: 1.5px;
+}
+.opening-p-span{
+  color: transparent;
+  letter-spacing: 5px;
+  position: relative;
+  -webkit-text-stroke: 2px #ff0090;
+
+}
+.opening-p-span:before{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  color: #ff0090;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.opening-p-span:hover:before{
+  width: 100%;
+}
+
+#info-section p span{
+  font-weight: bolder;
+}
+
+/* ========================================== */
+/*            SKILL SUMMARY STYLES            */
+/* ========================================== */
+#skills-section{
+  padding-bottom: 75px;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color:#ff0090;
+}
+.skills-container{
+  position:relative;
+  background-color: rgba(0, 67, 102, 0.2);
+  max-width: 1000px;
+  padding: 30px 0px 30px 0px;
+  border-radius: 50px;
+  margin:auto;
+}
+
+.skill-title{
+  text-align: center;
+}
+.exp-title{
+  text-align: left;
+}
+table tbody tr td{
+  letter-spacing: 2px;
+}
+.skill-name{
+  color: #3dc3fc;
+  text-align: center;
+}
+.expertise-level{
+  text-align: left;
+  color:white;
+}
+
+/* ========================================== */
+/*          GOAL  STYLES         */
+/* ========================================== */
+.goal-container{
+  background-color: rgba(0, 67, 102, 0.2);
+  max-width: 1100px;
+  height: auto;
+  margin:auto;
+  padding-top: 30px;
+  border-radius: 50px;
+
+}
+.goal-inner-container{
+  align-items: center;
+  text-align:center;
+  height: auto;
+  padding: 50px 50px 0px 50px;
+}
+
+
+.goals-title{
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* ========================================== */
+/*          TECHNOLOGY SUMMARY STYLES         */
+/* ========================================== */
+#tech-summary-section{
+  padding-top: 50px;
+}
+.tech-summary-container{
+  position: relative;
+  padding: 30px 0px 20px 0px;
+  max-width: 1000px;
+  margin:auto;
+  border-radius: 50px;
+  background-color: rgba(0, 67, 102, 0.2);
+}
+
+.tech-container{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tech-title{
+  text-align: center;
+}
+.title{
+  text-align: center;
+  color: #ff0090;
+  letter-spacing: 3px;
+}
+.tech-names{
+  text-align: center;
+  color: #3dc3fc;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  font-weight: bolder;
+
+}
+.tech-names span{
+  color: white;
+}
+
+/* ========================================== */
+/*          CONTACT INFORMATION DESIGN        */
+/* ========================================== */
+.contact-title{
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: Arial;
+}
+.contact-statement{
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+.contact-detail{
+  font-size: 1.2rem;
+  color: #e9ff7d;
+  letter-spacing: 2px;
+}
+#contact-section{
+  position: relative;
+  padding-top: 70px;
+}
+.contact-me-container{
+  max-width: 500px;
+  margin:auto;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 67, 102, 0.2);
+  border-radius: 50px;
+
+}
+.contact-info-container{
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+/* style for the footer*/
+footer{
+
+  color:white;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+ @media screen and (max-width: 700px) {
+   .home-container{
+     padding: 50px 0px 200px 0px;
+     height: auto;
+   }
+   .name{
+     font-size: 1em;
+     padding-top: 50px;
+   }
+   .main-header{
+     font-size: 1.8em;
+   }
+   .opening-paragraph{
+     font-size: 1.5em;
+   }
+
+   .opening-title, .supporting-par,.skill-name, .expertise-level{
+     font-size: 1em;
+
+   }
+   .contact-title, .goals-title{
+     font-size: 25px;
+   }
+   .goal-inner-container{
+     padding: 0px 10px 0px 10px;
+   }
+ }
