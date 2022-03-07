@@ -1,18 +1,17 @@
-const sections = document.querySelectorAll('section');
-const nav_list = document.querySelectorAll('.nav-container ul li');
+// Author: Raphael Di Ezmo
+// Description:
+// - This will be the javascript of my personal Website
+function infoReadMeFunction() {
+  var moreText = document.getElementById("moreInformation");
+  var btnText = document.getElementById("infoReadMe");
 
-window.addEventListener('scroll', ()=>{
-  let current = '';
-
-  section.forEach(section =>{
-    const section_top = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if(pageYOffset >= (sectionTop ))
-  })
-  nav_list.forEach(li => {
-    li.classList.remove('active');
-    if(li.classList.contains(current)){
-      li.classList.add('active')
-    }
-  })
-})
+   if (dots.style.display === "none") {
+     dots.style.display = "inline";
+     btnText.innerHTML = "Read more";
+     moreText.style.display = "none";
+   } else {
+     dots.style.display = "none";
+     btnText.innerHTML = "Read less";
+     moreText.style.display = "inline";
+   }
+}

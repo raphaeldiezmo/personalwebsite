@@ -2,7 +2,7 @@
 body{
   margin: 0;
   padding: 0;
-
+  max-width: 1980px;
   font-family: 'Zen Kaku Gothic Antique';
   background: radial-gradient(ellipse at bottom, #001526 70%,#00070d 100% );
   overflow-y: scroll;
@@ -11,7 +11,7 @@ body{
 }
 
 /* ========================================== */
-/*              ALL LINKS STYLES              */
+/*       HOVERABLE/CLICKABLE STYLES           */
 /* ========================================== */
 a{
   color:#7cff78;
@@ -43,6 +43,12 @@ a{
 a:hover{
   color:#7cff78;
 }
+.link-w-bg{
+  background-color: rgba(0, 33, 51, 0.7);
+  padding: 5px 10px 10px 10px;
+  border-radius: 10px;
+}
+
 /* ====================   */
 /* Title styles          */
 /* ===================== */
@@ -219,7 +225,7 @@ hr{
 }
 
 .information-container{
-  max-width: 1100px;
+  max-width: 1000px;
   position: relative;
   margin:auto;
   animation-name: show;
@@ -267,7 +273,17 @@ hr{
 #info-section p span{
   font-weight: bolder;
 }
+#infoReadMe{
+  background-color: transparent;
+  border: none;
+  color:#7cff78;
+  letter-spacing: 3px;
 
+}
+#moreInformation{
+  display: none;
+  transition: 0.5s ease;
+}
 /* ========================================== */
 /*            SKILL SUMMARY STYLES            */
 /* ========================================== */
@@ -312,7 +328,7 @@ table tbody tr td{
 /* ========================================== */
 .goal-container{
   background-color: rgba(0, 67, 102, 0.2);
-  max-width: 1100px;
+  max-width: 1000px;
   height: auto;
   margin:auto;
   padding-top: 30px;
@@ -418,6 +434,26 @@ footer{
   padding-bottom: 20px;
   text-align: center;
 }
+/* ========================================== */
+/*        LAST SECTION LINKS STYLING          */
+/* ========================================== */
+.section-link-list{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.inline-links{
+  list-style: none;
+  margin:auto;
+}
+.inline-links li{
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+}
+
+/* ========================================== */
+/*          DIFFERENT SCREEN SIZE STYLIN      */
+/* ========================================== */
 
  @media screen and (max-width: 700px) {
    .home-container{
