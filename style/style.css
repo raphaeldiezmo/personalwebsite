@@ -16,13 +16,12 @@ body{
 a{
   color:#7cff78;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: bolder;
   padding-bottom: 10px;
 }
 
 .link{
-
   position: relative;
 
 }
@@ -105,39 +104,32 @@ hr{
   color:#47eafc;
 }
 /* ========================================== */
-/*               NAV BAR STYLES             */
+/*         LINK TO MY FACE STYLES             */
 /* ========================================== */
-
-.navbar{
-  width:100%;
-  background-color: rgba(0, 38, 77, 0.5);
-  height: auto;
-  padding-left: 20px;
-
+.fixed-box{
+  color: #63faff;
+  text-align: center;
+  padding:5px;
+  height: 30px;
+  width: 250px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  background-color: rgba(0,0,0,0.2);
+  position: fixed;
   z-index: 1;
 }
-.nav-container{
-  margin: auto;
+.my-face-img{
+  opacity: 0;
+  max-height: 500px;
+  max-width: 300px;
+  transition: 0.5s ease;
 }
-.navbar-brand{
-  color: #f7902f;
-  margin: auto;
-  letter-spacing: 10px;
-  position: absolute;
+.face-rev:hover + .my-face-img{
+  opacity: 1;
 }
-.nav-link{
-  font-size: 0.8em;
-  color: white;
-  transition: 1s;
-}
-.nav-link:hover{
-  color: #f7902f;
-  font-weight: bolder;
-}
-.navbar-nav{
-  text-align: center;
-  margin: auto;
-}
+
+
+
 /* ========================================== */
 /*               HOME PAGE STYLES             */
 /* ========================================== */
@@ -240,7 +232,7 @@ hr{
 }
 .supporting-par{
   font-size: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #edfffe;
   padding-bottom: 3em;
 }
@@ -448,7 +440,7 @@ footer{
 }
 .inline-links li{
   display: inline-block;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 0px;
 }
 
 /* ========================================== */
