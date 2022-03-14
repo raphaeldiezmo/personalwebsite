@@ -47,7 +47,12 @@ a:hover{
   padding: 5px 10px 10px 10px;
   border-radius: 10px;
 }
-
+/* ====================   */
+/* Spacing styles         */
+/* =====================  */
+.bottom-space-3rem{
+  padding-bottom: 3rem;
+}
 /* ====================   */
 /* Title styles          */
 /* ===================== */
@@ -234,7 +239,6 @@ hr{
   font-size: 1rem;
   letter-spacing: 2px;
   color: #edfffe;
-  padding-bottom: 3em;
 }
 .opening-paragraph{
   color:white;
