@@ -144,7 +144,7 @@ hr{
   position: relative;
   color:#ffffff;
   height: 100vh;
-  background-image: url("/images/bg.jpg");
+  background-image: url("https://github.com/raphael-di-ezmo/personal-website/blob/master/images/bg.jpg?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
