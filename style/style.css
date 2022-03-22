@@ -52,6 +52,7 @@ a:hover{
 /* =====================   */
 /* GENERAL STYLING         */
 /* =====================   */
+
 /* titles */
 .main-title{
   font-weight: bolder;
@@ -61,9 +62,11 @@ a:hover{
   font-family: Arial;
 }
 .title{
-  text-align: center;
   color: #ff0090;
   letter-spacing: 3px;
+}
+.title-padding{
+  padding-bottom: 20px;
 }
 .small-titles{
   font-size: 1rem;
@@ -84,6 +87,13 @@ hr{
   font-weight: bolder;
   padding-bottom: 1px;
 }
+/* putting text in centers */
+.center-text{
+  text-align: center;
+}
+.position-in-top{
+  z-index: 1;
+}
 /* ========================================== */
 /*            NAVIGATION BAR STYLES           */
 /* ========================================== */
@@ -91,7 +101,6 @@ hr{
   padding: 10px 30px 10px 30px;
   width: 100%;
   background-color: rgba(0, 26, 54, 0.3);
-  z-index: 1;
   position: fixed;
 }
 .brand{
@@ -175,6 +184,11 @@ hr{
 .section-container{
   margin: auto;
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.container{
+  max-width: 800px;
 }
 
 /* ========================================== */
@@ -294,7 +308,7 @@ hr{
   font-size: 1.1rem;
   padding-bottom: 10px;
 }
-.paragraph{
+.normal-text{
   font-size: 1rem;
   letter-spacing: 1px;
   color: #edfffe;
@@ -303,7 +317,7 @@ hr{
   font-weight: bolder;
   font-family: Arial;
   font-size: 2.2rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 .opening-p-span{
   color: transparent;
@@ -341,14 +355,23 @@ hr{
 /* ========================================== */
 /*        SERVICES SECTION STYLING            */
 /* ========================================== */
-
-
+.web-services-col{
+  background-color: rgba(0, 67, 102, 0.2);
+  padding: 30px 10px 50px 10px;
+  border-radius: 20px;
+  border: 2px solid #22719c;
+}
+.web-services-list{
+  color: white;
+  list-style: none;
+}
+.uiux-detail-list{
+  list-style: none;
+}
 /* ========================================== */
 /*          TECHNOLOGY SUMMARY STYLES         */
 /* ========================================== */
-#tech-summary-section{
-  padding-top: 50px;
-}
+
 .tech-summary-container{
   position: relative;
   padding: 30px 0px 20px 0px;
@@ -367,16 +390,12 @@ hr{
 }
 
 .tech-names{
-  text-align: center;
   color: #3dc3fc;
-  font-size: 1.3em;
-  letter-spacing: 3px;
+  font-size: 1.1rem;
   font-weight: bolder;
 
 }
-.tech-names span{
-  color: white;
-}
+
 
 /* ========================================== */
 /*          CONTACT INFORMATION DESIGN        */
@@ -386,7 +405,7 @@ hr{
   font-weight: bolder;
   font-family: Arial;
 }
-.contact-statement{
+.small-statement{
   letter-spacing: 2px;
   font-size: 1.2rem;
 }

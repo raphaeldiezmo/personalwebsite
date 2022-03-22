@@ -15,9 +15,9 @@
   </head>
   <body>
 
-    <nav class="navbar">
+    <nav class="navbar position-in-top">
       <a class="brand letter-space" href="#">Raphael Diezmo</a>
-      <button id="menu-bttn" onclick="popup_menu()"class="menu-bttn">MENU</button>
+      <button id="menu-bttn letter-space" onclick="popup_menu()"class="menu-bttn">MENU</button>
     </nav>
     <div id="menu-display" class="menu-container">
       <button id="close-bttn" class="x-button" onclick="close_menu()"type="button" name="button">X</button>
@@ -25,7 +25,7 @@
         <li class="navbar-link letter-space"><a onclick="close_menu()" href="#home-section">Home</a></li>
         <li class="navbar-link letter-space"><a onclick="close_menu()" href="#info-section">About me</a></li>
         <li class="navbar-link letter-space"><a onclick="close_menu()" href="#projects-section">View Projects</a></li>
-        <li class="navbar-link letter-space"><a onclick="close_menu()" href="#services-section">View My Services</a></li>
+        <li class="navbar-link letter-space"><a onclick="close_menu()" href="#service-section">View My Services</a></li>
         <li class="navbar-link letter-space"><a onclick="close_menu()" href="#contact-section">Contact Me</a></li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
       <!-- ============================================= -->
       <!-- =========    INFORMATION SECTION   ========== -->
       <!-- ============================================= -->
-      <section id="info-section" class="page-container">
+      <section id="info-section" class="section-container ">
 
         <div class="information-container">
 
@@ -66,7 +66,7 @@
             <span class="opening-p-span" data-text="Mobile">Mobile</span>, and
             <span class="opening-p-span" data-text="Desktop">Desktop</span> Applications.
           Currently doing a freelance in any of the Development role.</p>
-            <p class="paragraph">
+            <p class="normal-text">
                During the course, I gained experience in
                developing an application in a systematic way: designing the app, getting approval if
                the design met all the requirements needed,
@@ -81,10 +81,13 @@
       <!-- ============================================= -->
       <!-- =========      PROJECTS SECTION    ========== -->
       <!-- ============================================= -->
-      <section class="projects-section">
+      <section id="projects-section" class="section-container">
         <div class="projects-inner-cont">
           <div class="container">
+            <h2 class="main-title">Case Studies</h2>
 
+            <div class="col-sm-4">
+            </div>
 
           </div>
 
@@ -93,23 +96,45 @@
       <!-- ============================================= -->
       <!-- =========     SERVICES SECTION     ========== -->
       <!-- ============================================= -->
-      <section class="service-section">
+      <section id="service-section" class="section-container">
         <div class="service-inner">
           <h2 class="main-title">Services</h2>
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <h3 class="title">Web Development</h3>
-                <ul>
-                  <li></li>
-                </ul>
+                <div class="web-services-col">
+                  <h4 class="center-text title title-padding">Web Development</h4>
+                  <ul class="web-services-list">
+                    <li class="tech-names">- UI/UX designing
+                      <ul class="uiux-detail-list">
+                        <li class="tech-names">+Responsive</li>
+                        <li class="tech-names">+Modern</li>
+                        <li class="tech-names">+Simple/Minimal</li>
+                      </ul>
+                    </li>
+                    <li class="tech-names">- Agile design & methodology</li>
+                    <li class="tech-names">- Database & Software integration</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="col-sm-6">
-                <h3 class="title">Software Development</h3>
-                <ul>
-                  <li></li>
-                </ul>
+                <div class="web-services-col ">
+                  <h4 class="center-text title title-padding">Software Development</h4>
+                  <ul class="web-services-list">
+                    <li class="tech-names">- Android/Desktop App Development
+                      <ul class="uiux-detail-list">
+                        <li class="tech-names">+UI/UX designing</li>
+                        <li class="tech-names">+Agile/Waterfall Methodology</li>
+                        <li class="tech-names">+SCRUM</li>
+                        <li class="tech-names">+AI & Machine Learning</li>
+                        <li class="tech-names">+DB & Web integration</li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </div>
+
               </div>
             </div>
 
@@ -119,40 +144,40 @@
       <!-- ============================================= -->
       <!-- =========   TECH-SUMMARY SECTION   ========== -->
       <!-- ============================================= -->
-      <section id="tech-summary-section">
+      <section id="tech-summary-section" class="section-container">
         <div class="tech-summary-container">
           <h2 class="main-title">Technology Summary</h2>
           <div class="row">
             <div class="tech-container col-sm-4">
-              <h4 class="title">Web Development</h4>
-              <span class="tech-names">HTML/HTML5</span><br>
-              <span class="tech-names">Bootstrap</span><br>
-              <span class="tech-names">JavaScript</span><br>
-              <span class="tech-names">NodeJs</span><br>
-              <span class="tech-names">CSS</span><br>
-              <span class="tech-names">SCSS</span><br>
-              <span class="tech-names">SASS</span>
+              <h4 class="title center-text">Web Development</h4>
+              <span class="tech-names center-text letter-space">HTML/HTML5</span><br>
+              <span class="tech-names center-text letter-space">Bootstrap</span><br>
+              <span class="tech-names center-text letter-space">JavaScript</span><br>
+              <span class="tech-names center-text letter-space">NodeJs</span><br>
+              <span class="tech-names center-text letter-space">CSS</span><br>
+              <span class="tech-names center-text letter-space">SCSS</span><br>
+              <span class="tech-names center-text letter-space">SASS</span>
             </div>
 
             <div class="tech-container col-sm-4">
-              <h4 class="title">Software Development</h4>
-                <span class="tech-names">Java</span><br>
-                <span class="tech-names">JavaFX</span><br>
-                <span class="tech-names">Swing</span><br>
-                <span class="tech-names">Python</span><br>
-                <span class="tech-names">TensorFlow</span><br>
-                <span class="tech-names">Numpy</span><br>
-                <span class="tech-names">Pandas</span><br>
-                <span class="tech-names">SQL</span>
+              <h4 class="center-text title">Software Development</h4>
+                <span class="tech-names center-text letter-space">Java</span><br>
+                <span class="tech-names center-text letter-space">JavaFX</span><br>
+                <span class="tech-names center-text letter-space">Swing</span><br>
+                <span class="tech-names center-text letter-space">Python</span><br>
+                <span class="tech-names center-text letter-space">TensorFlow</span><br>
+                <span class="tech-names center-text letter-space">Numpy</span><br>
+                <span class="tech-names center-text letter-space">Pandas</span><br>
+                <span class="tech-names center-text letter-space">SQL</span>
             </div>
             <div class="tech-container col-sm-4">
-              <h4 class="title">Additional techies</h4>
-              <span class="tech-names">GitHub</span><br>
-              <span class="tech-names">Git</span><br>
-              <span class="tech-names">Trello</span><br>
-              <span class="tech-names">Firebase Database</span><br>
-              <span class="tech-names">MongoDB</span><br>
-              <span class="tech-names">Jira</span><br>
+              <h4 class="title center-text">Additional techies</h4>
+              <span class="tech-names center-text letter-space">GitHub</span><br>
+              <span class="tech-names center-text letter-space">Git</span><br>
+              <span class="tech-names center-text letter-space">Trello</span><br>
+              <span class="tech-names center-text letter-space">Firebase Database</span><br>
+              <span class="tech-names center-text letter-space">MongoDB</span><br>
+              <span class="tech-names center-text letter-space">Jira</span><br>
 
             </div>
           </div>
@@ -164,12 +189,12 @@
       <section id="contact-section" class="page-container">
         <div class="contact-me-container">
               <h4 class="main-title">Contact information</h4>
-              <p class="contact-statement">Feel free to contact me anytime. I'll respond
+              <p class="small-statement">Feel free to contact me anytime. I'll respond
                 to you as soon as I can.
               <div class="contact-info-container">
-                <span class="contact-statement">E-mail</span><br>
+                <span class="small-statement">E-mail</span><br>
                 <a href="mailto:raphaeldiezmo@gmail.com">raphaeldiezmo@gmail.com</a><br>
-                <span class="contact-statement">Mobile</span><br>
+                <span class="small-statement">Mobile</span><br>
                 <a href="tel:+353851748323">+353 85 174 8323</a>
               </div>
 
