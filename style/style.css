@@ -75,7 +75,10 @@ a:hover{
 }
 
 /* letter spacing */
-.letter-space{
+.letter-space-2{
+  letter-spacing: 2px;
+}
+.letter-space-5{
   letter-spacing: 5px;
 }
 .bottom-space-3rem{
@@ -93,6 +96,10 @@ hr{
 }
 .position-in-top{
   z-index: 1;
+}
+/* padding left to all the list */
+.ul-padding{
+  padding-right: 30px;
 }
 /* ========================================== */
 /*            NAVIGATION BAR STYLES           */
@@ -400,9 +407,7 @@ hr{
   color: white;
   list-style: none;
 }
-.uiux-detail-list{
-  list-style: none;
-}
+
 /* ========================================== */
 /*          TECHNOLOGY SUMMARY STYLES         */
 /* ========================================== */
