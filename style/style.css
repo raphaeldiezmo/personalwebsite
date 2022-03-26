@@ -480,12 +480,7 @@ footer{
 
  @media screen and (max-width: 700px) {
    .home-container{
-     padding: 50px 0px 200px 0px;
-     height: auto;
-   }
-   .name{
-     font-size: 1em;
-     padding-top: 50px;
+     padding: 0px 0px 50px 0px;
    }
    .main-header{
      font-size: 1.8em;
@@ -496,7 +491,6 @@ footer{
 
    .opening-title, .supporting-par,.skill-name, .expertise-level{
      font-size: 1em;
-
    }
    .contact-title, .goals-title{
      font-size: 25px;
