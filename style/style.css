@@ -199,7 +199,7 @@ hr{
 }
 
 /* ========================================== */
-/*               HOME PAGE STYLES             */
+/*            HOME SECTION STYLES             */
 /* ========================================== */
 
 .home-container{
@@ -214,11 +214,11 @@ hr{
 }
 .opening-text-container{
   padding-top: 60px;
-  padding-bottom:100px;
+  padding-bottom: 25px;
 }
 
 .name{
-  padding: 100px 5px 20px 5px;
+  padding: 0px 5px 20px 5px;
 }
 
 .main-header{
@@ -245,14 +245,47 @@ hr{
 .motto{
   letter-spacing: 2px;
 }
-/* CV button */
-.cv-button{
-  background: none;
+/* My photo */
+.my-img-container{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+}
+.my-img-container img{
+  max-width: 300px;
+  border-radius: 120px 120px 0px 0px;
+}
+/* CV link */
+.cv-link-container{
+  padding-top: 25px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+.cv-link {
   color:#7cff78;
-  font-weight: bold;
-  border: 1px solid white;
+  background-color: rgba(255, 0, 0, 0);
+  font-weight: lighter;
   padding:10px 15px 15px 15px;
-  border-radius: 5px 30px 10px 30px;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+.cv-link-border{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #7cff78;
+
+}
+.cv-link:hover{
+  font-weight: bolder;
+  color: #4df078;
+  font-size: 1.1rem;
 }
 /* ========================================== */
 /*              ARROW DOWN STYLES             */
@@ -355,11 +388,13 @@ hr{
 /* ========================================== */
 /*        SERVICES SECTION STYLING            */
 /* ========================================== */
+.web-services-outer-container{
+  padding-bottom: 30px;
+}
 .web-services-col{
   background-color: rgba(0, 67, 102, 0.2);
   padding: 30px 10px 50px 10px;
   border-radius: 20px;
-  border: 2px solid #22719c;
 }
 .web-services-list{
   color: white;
