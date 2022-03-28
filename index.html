@@ -14,11 +14,13 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
   </head>
   <body>
+    <div class="nav-container">
+      <nav class="navbar position-in-top">
+        <a class="brand letter-space-5" href="#">Raphael Diezmo</a>
+        <button id="menu-bttn letter-space-5" onclick="popup_menu()"class="menu-bttn">MENU</button>
+      </nav>
+    </div>
 
-    <nav class="navbar position-in-top">
-      <a class="brand letter-space-5" href="#">Raphael Diezmo</a>
-      <button id="menu-bttn letter-space-5" onclick="popup_menu()"class="menu-bttn">MENU</button>
-    </nav>
     <div id="menu-display" class="menu-container">
       <button id="close-bttn" class="x-button" onclick="close_menu()"type="button" name="button">X</button>
       <div class="menu-link-container">
@@ -91,7 +93,9 @@
         <div class="projects-inner-cont">
           <div class="container">
             <h2 class="main-title">Projects</h2>
-            <h4 class="tech-names letter-space"><i>Under Construction</i></h4>
+            <img class="maintenance-img" src="/images/under-construction.jpg" alt="">
+            <h1 class="maintenance-label letter-space-3"><b>
+            Please continue scrolling down...</b></h1>
 
               <!-- <div class="col-sm-4">
               <div class="project-container">
