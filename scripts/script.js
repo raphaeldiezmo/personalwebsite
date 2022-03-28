@@ -19,8 +19,6 @@ function popup_menu(){
   console.log("hello world")
   disableScroll();
   document.getElementById("full-page-container").style.cssText = "filter: blur(8px);  -webkit-filter: blur(8px);"
-  document.getElementById("menu-opt-1").style.textAlign = "center";
-  document.getElementById("menu-opt-2").style.textAlign = "center";
 
 }
 // Closing menu
