@@ -21,13 +21,16 @@
     </nav>
     <div id="menu-display" class="menu-container">
       <button id="close-bttn" class="x-button" onclick="close_menu()"type="button" name="button">X</button>
-      <ul>
-        <li class="navbar-link letter-space-5"><a onclick="close_menu()" href="#home-section">Home</a></li>
-        <li class="navbar-link letter-space-5"><a onclick="close_menu()" href="#info-section">About me</a></li>
-        <li class="navbar-link letter-space-5"><a onclick="close_menu()" href="#projects-section">View Projects</a></li>
-        <li class="navbar-link letter-space-5"><a onclick="close_menu()" href="#service-section">View My Services</a></li>
-        <li class="navbar-link letter-space-5"><a onclick="close_menu()" href="#contact-section">Contact Me</a></li>
-      </ul>
+      <div class="menu-link-container">
+        <ul>
+          <li id="menu-opt" class="navbar-link letter-space-5"><a onclick="close_menu()" href="#home-section">Home</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5"><a onclick="close_menu()" href="#info-section">About me</a></li>
+          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#projects-section">View Projects</a></li>
+          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#service-section">View My Services</a></li>
+          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#contact-section">Contact Me</a></li>
+        </ul>
+      </div>
+
     </div>
     <div id="full-page-container" class="container-fluid">
       <!-- ============================================= -->
@@ -61,9 +64,7 @@
       <!-- =========    INFORMATION SECTION   ========== -->
       <!-- ============================================= -->
       <section id="info-section" class="section-container ">
-
         <div class="information-container">
-
           <h4 class="about-me-title small-titles">About me</h4>
           <p class="opening-paragraph">
             I'm Raphael Diezmo, completed the course, BSc Software Development
@@ -82,7 +83,6 @@
               a lot of research about new technology; such as hardware, software and
               new devices.
           </div>
-
       </section>
       <!-- ============================================= -->
       <!-- =========      PROJECTS SECTION    ========== -->
@@ -90,13 +90,33 @@
       <section id="projects-section" class="section-container">
         <div class="projects-inner-cont">
           <div class="container">
-            <h2 class="main-title">Case Studies</h2>
-
+            <h1><i>Under Construction</i></h1>
+            <!-- <h2 class="main-title">Projects</h2>
             <div class="col-sm-4">
+              <div class="project-container">
+                <div class="project-container-inner">
+                  <div class="project-image-container">
+                    <img src="" alt="">
+                  </div>
+                  <div class="project-description-container">
+                    <span class="normal-text">In-progress</span>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <div class="col-sm-4">
+              <div class="project-container">
+                <div class="project-container-inner">
+                  <div class="project-image-container">
+                    <img src="" alt="">
+                  </div>
+                  <div class="project-description-container">
+                    <span class="normal-text">In-progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>-->
           </div>
-
         </div>
       </section>
       <!-- ============================================= -->
