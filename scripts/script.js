@@ -30,3 +30,57 @@ function close_menu(){
    "filter: blur(0px);  -webkit-filter: blur(0px);"
 
 }
+
+// ========================================
+//                OBSERVERS
+// ========================================
+
+const fader = document.querySelectorAll('.fade-in');
+const slider = document.querySelectorAll('.slider');
+const appearOptions = {
+  threshold: 1, rootMargin: "0px 0px -100px 0px"
+};
+
+
+// const appearOnClick = new InterserctionObserver(
+//   function(
+//     entries, appearOnClick
+//   ){
+//     entries.forEach(entry=> {
+//       if(!entry.isIntersecting){
+//         return;
+//       }
+//       else{
+//         entry.target.classList.add('appear');
+//         appearOnClick.unobserve(entry.target);
+//       }
+//     })
+//   },appearOptions
+// );
+const appearOnScroll = new IntersectionObserver(
+  function(
+    entries, appearOnScroll
+  ){
+    entries.forEach(entry => {
+      if(!entry.isIntersecting){
+        return;
+      }
+      else{
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      }
+    })
+  }, appearOptions
+);
+
+fader.forEach(fader=>{
+  appearOnScroll.observe(fader);
+})
+
+slider.forEach(slider=>{
+  appearOnScroll.observe(slider);
+})
+
+
+
+//

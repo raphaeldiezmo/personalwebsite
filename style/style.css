@@ -552,3 +552,32 @@ footer{
      padding: 0px 10px 0px 10px;
    }
  }
+
+
+ /* ========================================== */
+ /*            TRANSITIONS + ANIMATIONS        */
+ /* ========================================== */
+ .fade-in{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+ }
+ .delay-trans{
+   transition-delay: 0.2s;
+ }
+ .fade-in.appear{
+   opacity:1;
+ }
+
+
+.from-left{
+  transform: translateX(-50%);
+}
+.from-right{
+  transform: translateX(50%);
+}
+.from-left, .from-right{
+  transition: transform 0.4s ease-in;
+}
+.from-left.appear, .from-right.appear{
+  transform: translateX(0);
+}

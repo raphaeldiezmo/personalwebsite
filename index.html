@@ -21,15 +21,15 @@
       </nav>
     </div>
 
-    <div id="menu-display" class="menu-container">
+    <div id="menu-display" class="menu-container fade-in">
       <button id="close-bttn" class="x-button" onclick="close_menu()"type="button" name="button">X</button>
       <div class="menu-link-container">
         <ul>
-          <li id="menu-opt" class="navbar-link letter-space-5"><a onclick="close_menu()" href="#home-section">Home</a></li>
-          <li id="menu-opt" class="navbar-link letter-space-5"><a onclick="close_menu()" href="#info-section">About me</a></li>
-          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#projects-section">View Projects</a></li>
-          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#service-section">View My Services</a></li>
-          <li id="menu-opt"class="navbar-link letter-space-5"><a onclick="close_menu()" href="#contact-section">Contact Me</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5 slider from-right"><a onclick="close_menu()" href="#home-section">Home</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5 slider from-left"><a onclick="close_menu()" href="#info-section">About me</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5 slider from-right"><a onclick="close_menu()" href="#projects-section">View Projects</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5 slider from-left"><a onclick="close_menu()" href="#service-section">View My Services</a></li>
+          <li id="menu-opt" class="navbar-link letter-space-5 slider from-right"><a onclick="close_menu()" href="#contact-section">Contact Me</a></li>
         </ul>
       </div>
 
@@ -41,7 +41,7 @@
       <section id="home-section" class="section-container">
         <div class="home-container">
           <div class="wrapper">
-            <div class="opening-text-container">
+            <div class="opening-text-container fade-in">
               <h4 class="name small-titles letter-space-5">Raphael Diezmo</h4>
               <h2 class="main-header">Full-stack Website & <br>Software Developer</h2>
               <p class="motto">"Tell me and I’ll forget. Show me and I may remember.<br>Involve me and I learn."
@@ -50,10 +50,10 @@
               <span class="divider"> / </span>
               <a class="link" href="#contact-section">Reach me out</a>
             </div>
-            <div class="my-img-container">
+            <div class="my-img-container fade-in delay-trans">
               <img src="images/me.jpg" alt="it's just my photo">
             </div>
-            <div class="cv-link-container">
+            <div class="cv-link-container fade-in delay-trans">
               <div class="cv-link-border"></div>
               <a id="cv-link" class="cv-link letter-spacing" href="raphaeldiezmoCV.pdf" target="_blank">Checkout my CV</a>
 
@@ -65,17 +65,17 @@
       <!-- ============================================= -->
       <!-- =========    INFORMATION SECTION   ========== -->
       <!-- ============================================= -->
-      <section id="info-section" class="section-container ">
+      <section id="info-section" class="section-container">
         <div class="information-container">
           <h4 class="about-me-title small-titles">About me</h4>
-          <p class="opening-paragraph">
+          <p class="opening-paragraph fade-in">
             I'm Raphael Diezmo, completed the course, BSc Software Development
             at MTU, Cork, Ireland, where I upskilled myself in creating
             a <span class="opening-p-span" data-text="Website">Website</span>,
             <span class="opening-p-span" data-text="Mobile">Mobile</span>, and
             <span class="opening-p-span" data-text="Desktop">Desktop</span> Applications.
           Currently doing a freelance in any of the Development role.</p>
-            <p class="normal-text">
+            <p class="normal-text fade-in delay-trans">
                During the course, I gained experience in
                developing an application in a systematic way: designing the app, getting approval if
                the design met all the requirements needed,
@@ -133,7 +133,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <div class="web-services-outer-container">
+                <div class="web-services-outer-container slider from-left">
                   <div class="web-services-col">
                     <h4 class="center-text title title-padding">Web Development</h4>
                     <ul class="ul-padding normal-text center-text web-services-list">
@@ -152,7 +152,7 @@
               </div>
 
               <div class="col-sm-6">
-                <div class="web-services-outer-container">
+                <div class="web-services-outer-container slider from-right">
                   <div class="web-services-col ">
                     <h4 class="center-text title title-padding">Software Development</h4>
                     <ul class="ul-padding normal-text center-text web-services-list">
@@ -182,7 +182,7 @@
         <div class="tech-summary-container">
           <h2 class="main-title">Technology Summary</h2>
           <div class="row">
-            <div class="tech-container col-sm-4">
+            <div class="tech-container col-sm-4 slider from-left">
               <h4 class="title center-text">Web Development</h4>
               <span class="tech-names center-text letter-space-5">HTML/HTML5</span><br>
               <span class="tech-names center-text letter-space-5">Bootstrap</span><br>
@@ -193,7 +193,7 @@
               <span class="tech-names center-text letter-space-5">SASS</span>
             </div>
 
-            <div class="tech-container col-sm-4">
+            <div class="tech-container col-sm-4 fade-in delay-trans">
               <h4 class="center-text title">Software Development</h4>
                 <span class="tech-names center-text letter-space-5">Java</span><br>
                 <span class="tech-names center-text letter-space-5">JavaFX</span><br>
@@ -204,7 +204,7 @@
                 <span class="tech-names center-text letter-space-5">Pandas</span><br>
                 <span class="tech-names center-text letter-space-5">SQL</span>
             </div>
-            <div class="tech-container col-sm-4">
+            <div class="tech-container col-sm-4 slider from-right">
               <h4 class="title center-text">Additional techies</h4>
               <span class="tech-names center-text letter-space-5">GitHub</span><br>
               <span class="tech-names center-text letter-space-5">Git</span><br>
