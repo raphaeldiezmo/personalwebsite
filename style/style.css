@@ -429,10 +429,14 @@ hr{
 /* ========================================== */
 /*        SERVICES SECTION STYLING            */
 /* ========================================== */
+.service-inner{
+  text-align: left;
+}
 .web-services-outer-container{
   padding-bottom: 30px;
 }
 .web-services-col{
+  height: 350px;
   background-color: rgba(0, 67, 102, 0.2);
   padding: 30px 10px 50px 10px;
   border-radius: 20px;
