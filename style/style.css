@@ -3,7 +3,7 @@ body{
   margin: auto;
   padding: 0;
   max-width: 1980px;
-  font-family: 'Zen Kaku Gothic Antique';
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;  
   background:#00070d;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -109,6 +109,25 @@ hr{
   font-weight: bolder;
   font-family: Arial;
 
+}
+.service-list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.item-list{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+  border:#3ab7ff 1px solid;
+
+
+}
+.item-list span{
+  font-size: 1.3rem;
 }
 .maintenance-img{
   width: 100%;
@@ -432,18 +451,52 @@ hr{
 .service-inner{
   text-align: left;
 }
-.web-services-outer-container{
-  padding-bottom: 30px;
+
+#service-section{
+  width: 100%;
+
 }
-.web-services-col{
-  height: 350px;
-  background-color: rgba(0, 67, 102, 0.2);
-  padding: 30px 10px 50px 10px;
-  border-radius: 20px;
+.service-container{
+  display: flex;
+  padding-top: 50px;
+  flex: row;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
 }
-.web-services-list{
+.service-text-content{
   color: white;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding: 50px;
+  flex: 50%;
+}
+.service-img-content{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  flex: 50%;
+}
+.web-dev-img-container{
+  border-radius: 30% 70% 74% 26% / 46% 73% 27% 54% ;
+  background-color: rgb(215, 255, 252);
+
+}
+.app-dev-img{
+  mix-blend-mode: multiply;
+  width: 70%;
+  margin: auto;
+}
+.web-dev-service-img{
+  width: 80%;
+  mix-blend-mode: multiply;
+}
+.service-text-content p{
+  font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 /* ========================================== */
 /*            PROJECT SECTION STYLES          */
