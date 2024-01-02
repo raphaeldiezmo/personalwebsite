@@ -310,13 +310,13 @@ hr{
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 300px;
+    width: 500px;
     height: 350px;
     overflow: hidden;
 }
 .my-img-container img{
   max-width: 300px;
-  border-radius: 120px 120px 0px 0px;
+
 }
 /* CV link */
 .cv-link-container{
