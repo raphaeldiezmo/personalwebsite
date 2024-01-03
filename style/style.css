@@ -2,51 +2,15 @@
 body{
   margin: auto;
   padding: 0;
-  max-width: 1980px;
+  max-width: 1960px;
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;  
-  background:#00070d;
+  background:#111111;
   overflow-y: scroll;
   scroll-behavior: smooth;
-
+  color: #eeeeee;
 }
 
-/* ========================================== */
-/*       HOVERABLE/CLICKABLE STYLES           */
-/* ========================================== */
-a{
-  color:#7cff78;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-}
 
-.link{
-  position: relative;
-
-}
-.link:after{
-  content: "";
-  position: absolute;
-  background-color:#ff0090;
-  height: 3px;
-  width: 0;
-  left: 0;
-  transition: 0.5s;
-  bottom: -10px;
-}
-
-.link:hover:after{
-  width: 100%;
-}
-a:hover{
-  color:#7cff78;
-}
-.link-w-bg{
-  background-color: rgba(0, 33, 51, 0.7);
-  padding: 5px 10px 10px 10px;
-  border-radius: 10px;
-}
 
 
 /* =====================   */
@@ -62,7 +26,7 @@ a:hover{
   font-family: Arial;
 }
 .title{
-  color: #ff0090;
+  color: #ffffff;
   letter-spacing: 3px;
 }
 .title-padding{
@@ -70,7 +34,6 @@ a:hover{
 }
 .small-titles{
   font-size: 1rem;
-  margin:auto;
   letter-spacing: 5px;
 }
 
@@ -258,95 +221,7 @@ hr{
   color:#47eafc;
 }
 
-/* ========================================== */
-/*            HOME SECTION STYLES             */
-/* ========================================== */
 
-.home-container{
-  text-align: center;
-  position: relative;
-  color:#ffffff;
-}
-.wrapper{
-  justify-content: center;
-  align-content: center;
-  height: 100%;
-}
-.opening-text-container{
-  padding-top: 60px;
-  padding-bottom: 25px;
-}
-
-.name{
-  padding: 0px 5px 20px 5px;
-}
-
-.main-header{
-  font-family: 'Montserrat', sans-serif;
-  color: #ffc73b;
-  font-size: 2.5em;
-  font-weight: bolder;
-}
-
-@keyframes show{
-  from {top: -30px;}
-  to {top: 0px; opacity:100%;}
-}
-
-.divider{
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-.starting-paragraph{
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-.motto{
-  letter-spacing: 2px;
-}
-/* My photo */
-.my-img-container{
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 500px;
-    height: 350px;
-    overflow: hidden;
-}
-.my-img-container img{
-  max-width: 300px;
-
-}
-/* CV link */
-.cv-link-container{
-  padding-top: 25px;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-}
-.cv-link {
-  color:#7cff78;
-  background-color: rgba(255, 0, 0, 0);
-  font-weight: lighter;
-  padding:10px 15px 15px 15px;
-  transition: 0.5s ease;
-  z-index: 1;
-}
-.cv-link-border{
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  border: 2px solid #7cff78;
-
-}
-.cv-link:hover{
-  font-weight: bolder;
-  color: #4df078;
-  font-size: 1.1rem;
-}
 /* ========================================== */
 /*              ARROW DOWN STYLES             */
 /* ========================================== */
