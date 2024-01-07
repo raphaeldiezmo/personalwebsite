@@ -22,7 +22,7 @@
     border-radius: 100%;
     border: none;
     /* box-shadow: 0 5px 5px 0 rgba(151, 151, 151, 0.1), 0 6px 20px 0 rgba(201, 201, 201, 0.1);     */
-    box-shadow: 0 0 20px rgba(179, 179, 179, 0.3);
+    box-shadow: 0 0 10px rgba(179, 179, 179, 0.3);
 
 }
 /* menu button */

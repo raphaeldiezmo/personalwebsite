@@ -78,4 +78,27 @@ slider.forEach(slider=>{
 
 
 
-//
+// TECH INIFNITE SCROLLERS
+const scroller = document.querySelectorAll(".scroller");
+
+if(!window.matchMedia("prefers-reduce-motion: reduce").matches){
+   addAnimation();
+}
+function addAnimation(){
+  scroller.forEach((scroller) => {
+    scroller.setAttribute  ("data-animated", true);
+    const scrollerInner = document.querySelector(".inner-scroller");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      // duplicatedItem.setAttribute('aria-hidden', true);
+      scrollerInner.appendChild(duplicatedItem);
+      scrollerInner.appendChild(duplicatedItem);
+
+    });
+  });
+
+  
+}
