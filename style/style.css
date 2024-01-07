@@ -66,38 +66,8 @@ hr{
 .ul-padding{
   padding-right: 30px;
 }
-/* maintenance labeling */
-.maintenance-label{
-  padding: 50px 0px 100px 0px;
-  text-align: center;
-  color: red;
-  font-weight: bolder;
-  font-family: Arial;
-
-}
-.service-list-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.item-list{
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 10px;
-  align-items: center;
-  text-align: center;
-  border:#3ab7ff 1px solid;
 
 
-}
-.item-list span{
-  font-size: 1.3rem;
-}
-.maintenance-img{
-  width: 100%;
-  padding-top: 50px;
-}
 /* ========================================== */
 /*            NAVIGATION BAR STYLES           */
 /* ========================================== */
@@ -397,7 +367,7 @@ hr{
 
 
 .service-tech-list-container{
-  width: clamp(250px, 90vw, 800px);
+  width: clamp(250px, 90vw, 1500px);
   display: flex;
   padding: 50px 0;
   margin: auto;
@@ -412,18 +382,19 @@ hr{
     transparent
   );
   mask: linear-gradient(90deg,transparent, white 5%, white 95%, transparent);
-
 }
+
+
 
 .tech-list{
   display: flex;
   white-space: nowrap;
-  gap: 2rem;
-  animation: slide 20s linear infinite;
+  gap: 3rem;
+  animation: slide 30s linear infinite;
 }
 .tech-item{
   font-weight: bolder;
-  font-size: clamp(1.3rem, 10vw, 4rem);
+  font-size: clamp(1.3rem, 10vw, 10rem);
   color: transparent; /* Make the text transparent */
   -webkit-text-stroke: 2px rgb(222, 222, 222); /* Specify the text stroke for WebKit (Safari) */
   text-stroke: 2px black; /* Specify the text stroke for Firefox */
@@ -433,6 +404,30 @@ hr{
 .scroller[data-animated="true"]{
   /* overflow: hidden ; */
  }
+
+
+/* ========================================== */
+/*            DESKTOP TECH LIST               */
+/* ========================================== */
+.service-tech-container{
+}
+.desktop-tech-list{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 50px 0;
+
+}
+.desktop-tech-list li{
+  background-color: rgba(19, 19, 19, 0.9);
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 20px;
+  border-radius: 8px;
+
+}
 
 .scroller[data-animate="true"] .inner-scroller{
   flex-wrap: nowrap;
