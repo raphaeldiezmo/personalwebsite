@@ -7,9 +7,9 @@ var body = document.body;
 // console.log("JS loaded");
 
 // Disabling scroll
-function disableScroll() {
-  body.style.overflow = "hidden";
-}
+// function disableScroll() {
+//   body.style.overflow = "hidden";
+// }
 
 // Opening menu
 function popup_menu(){
@@ -55,14 +55,15 @@ const appearOnScroll = new IntersectionObserver(
   ){
     // running to every each entry
     entries.forEach(entry => {
-      if(!entry.isIntersecting){
-        return;
+      if(entry.isIntersecting){
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+
       }
       // if an entry doesn't intersect, it'll
       // add the appear class in the entry
       else{
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
+        entry.target.classList.remove('appear');
       }
     })
   }, appearOptions
@@ -75,6 +76,23 @@ fader.forEach(fader=>{
 slider.forEach(slider=>{
   appearOnScroll.observe(slider);
 })
+
+
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entry) => {
+    if (entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+    else{
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+
+const hiddenElements = document.querySelector('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 
 
 
@@ -90,14 +108,20 @@ function addAnimation(){
     const scrollerInner = document.querySelector(".inner-scroller");
     const scrollerContent = Array.from(scrollerInner.children);
 
+    const scrollerInner2 = document.querySelector(".tech-list-2");
+    const scrollerContent2 = Array.from(scrollerInner2.children);
 
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
-      // duplicatedItem.setAttribute('aria-hidden', true);
       scrollerInner.appendChild(duplicatedItem);
       scrollerInner.appendChild(duplicatedItem);
 
     });
+    scrollerContent2.forEach((item2) => {
+      const duplicatedItem2 = item2.cloneNode(true);
+      scrollerInner2.appendChild(duplicatedItem2);
+    });
+    console.log(scrollerInner2);
   });
 
   

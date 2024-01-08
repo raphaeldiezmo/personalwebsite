@@ -6,6 +6,7 @@ body{
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;  
   background-color: rgb(11, 11, 11);
   overflow-y: scroll;
+  overflow-x:hidden;
   scroll-behavior: smooth;
   color: #eeeeee;
 }
@@ -36,7 +37,7 @@ body{
 }
 .small-titles{
   font-size: 1rem;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 /* letter spacing */
@@ -193,49 +194,22 @@ hr{
 }
 
 
-/* ========================================== */
-/*              ARROW DOWN STYLES             */
-/* ========================================== */
-.arrow{
-  position: relative;
-  left:49.3%;
-}
-.arrow-down{
-  display:block;
-  width: 15px;
-  height: 15px;
-  border-bottom: 1px solid yellow;
-  border-right: 1px solid yellow;
-  transform: rotate(45deg);
-  animation: scroll 2s infinite;
-}
-
-.arrow span:nth-child(2){
-  animation-duration: -1s;
-}
-.arrow span:nth-child(3){
-  animation-duration: -2s;
-}
-
-@keyframes scroll {
-  0%{opacity: 0;transform: rotate(45deg) translate(-5px, -5px);}
-  50%{opacity: 0.5;}
-  100%{opacity: 1;transform: rotate(45deg) translate(5px, 5px);}
-}
 
 /* ========================================== */
 /*          INFORMATION SECTION STYLES        */
 /* ========================================== */
 #info-section{
   width: 100%;
-  
   color: white;
   text-align: left;
+  background-color: rgb(9, 9, 9);
+
 }
 
 .information-container{
+  width: clamp(250px, 100%, 1500px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -244,32 +218,42 @@ hr{
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+.information-container-contents{
+  width: clamp(250px, 87.5%, 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+}
+.information-container-contents p, .information-container-contents h4{
+  max-width: 600px;
+}
 .about-me-title
 {
-  font-size: 1rem;
+  width: 100%;
+  text-align: left;
   font-weight: bolder;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
 .normal-text{
-  width: clamp(250px, 87.5%, 600px);
   font-size: 1rem;
   letter-spacing: 1px;
-  color: #edfffe;
+  color: #c1c1c1;
 }
 .opening-paragraph{
-  width: clamp(250px, 87.5%, 600px);
   font-weight: bolder;
   font-family: Arial;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
-.opening-p-span{
+/* .opening-p-span{
   color: transparent;
   letter-spacing: 5px;
   position: relative;
   -webkit-text-stroke: 2px #ff0090;
 
-}
+} */
 .opening-p-span:before{
   content: attr(data-text);
   position: absolute;
@@ -320,6 +304,7 @@ hr{
   justify-content: center;
   text-align: left;
   align-items: center;
+  padding: 100px 0;
   width: clamp(250px, 87.5%, 600px);
   margin:auto;
 }
@@ -351,10 +336,40 @@ hr{
 }
 .service-text-content p{
   font-size: 1rem;
+  color: #c1c1c1;
   letter-spacing: 0.5px;
 }
 
+.desktop-app-dev-container{
+  height: 500px;
+}
+.service-img-container{
+  height: 450px;
 
+  display: flex;
+  overflow: hidden;
+  padding-top: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+
+}
+.service-img-container img{
+  width: clamp(100px, 90vw, 600px);
+  opacity: 0.2;
+  margin-left: 200px;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg,transparent, white 1%, white 99%, transparent);
+
+
+}
 /* ========================================== */
 /*          TECH LIST  SECTION STYLES         */
 /* ========================================== */
@@ -369,7 +384,6 @@ hr{
 .service-tech-list-container{
   width: clamp(250px, 90vw, 1500px);
   display: flex;
-  padding: 50px 0;
   margin: auto;
   justify-content: flex-start;
   align-items: center;
@@ -381,7 +395,7 @@ hr{
     white 80%,
     transparent
   );
-  mask: linear-gradient(90deg,transparent, white 5%, white 95%, transparent);
+  mask: linear-gradient(90deg,transparent, white 1%, white 99%, transparent);
 }
 
 
@@ -390,7 +404,13 @@ hr{
   display: flex;
   white-space: nowrap;
   gap: 3rem;
-  animation: slide 30s linear infinite;
+  animation: slide 50s linear infinite;
+}
+.tech-list-2{
+  display: flex;
+  white-space: nowrap;
+  gap: 3rem;
+  animation: slide var(--_animation-direction, reverse) 60s linear infinite;
 }
 .tech-item{
   font-weight: bolder;
@@ -426,7 +446,6 @@ hr{
   flex-wrap: wrap;
   padding: 5px 20px;
   border-radius: 8px;
-
 }
 
 .scroller[data-animate="true"] .inner-scroller{
@@ -448,36 +467,98 @@ hr{
 }
 
 /* ========================================== */
-/*          TECHNOLOGY SUMMARY STYLES         */
+/*             CASE STUDIES STYLES            */
 /* ========================================== */
-
-.tech-summary-container{
-  position: relative;
-  padding: 30px 0px 20px 0px;
-  max-width: 1000px;
-  margin:auto;
-  border-radius: 50px;
-  background-color: rgba(20, 20, 20, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
+.work-summary-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.tech-container{
-  text-align: center;
-  padding-bottom: 20px;
-}
-.tech-title{
-  text-align: center;
-}
-
-.tech-names{
-  color: #3dc3fc;
-  font-size: 1.1rem;
+.work-summary-title{
   font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5c5c5c, #ffffff);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+      
+}
+
+.case-study-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.case-study-img{
+  width: clamp(250px, 100%, 800px);
+}
+.case-study-img img{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+
 
 }
 
+.case-study-contents{
+  padding: 50px 0;
+}
+.issue-title{
+  width: 100%;
+  text-align: center;
+}
+.case-study-content-section{
+  padding: 50px 0;
+}
+.case-study-contents h4{
+  
+  color: #8c8c8c;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.issue-title p{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px 0;
 
+}
+.case-study-title h4{
+  width: clamp(250px, 87.5%, 600px);
+  margin: auto;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.issue-sentence-container{
+  width: clamp(250px, 87.5%, 600px);
+  margin: auto;
+}
+.research-sentence{
+  font-weight: bold;
+  color: white;
+}
 /* ========================================== */
 /*          CONTACT INFORMATION DESIGN        */
 /* ========================================== */
@@ -539,8 +620,23 @@ hr{
   align-items: center;
 }
 .social-links a{
-  color: rgb(220, 220, 220);
+  /* Fallback: Set a background color. */
+  background-color: red;
 
+  /* Create the gradient. */
+  background-image: linear-gradient(60deg, #5c5c5c, #ffffff);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+    
 }
 /* style for the footer*/
 footer{
@@ -555,30 +651,11 @@ footer{
 /* ========================================== */
 /*          DIFFERENT SCREEN SIZE STYLIN      */
 /* ========================================== */
-
- @media screen and (max-width: 700px) {
-   .home-container{
-     padding: 0px 0px 50px 0px;
-   }
-   .main-header{
-     font-size: 1.8em;
-   }
-   .opening-paragraph{
-     font-size: 1.5em;
-   }
-
-   .opening-title, .supporting-par,.skill-name, .expertise-level{
-     font-size: 1em;
-   }
-   .contact-title, .goals-title{
-     font-size: 25px;
-   }
-   .goal-inner-container{
-     padding: 0px 10px 0px 10px;
-   }
- }
-
-
+@media (max-width: 1200px){
+  .information-container{
+    flex-direction: column;
+  }
+}
  /* ========================================== */
  /*            TRANSITIONS + ANIMATIONS        */
  /* ========================================== */
@@ -613,3 +690,13 @@ footer{
 
 
 
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.5s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+}
