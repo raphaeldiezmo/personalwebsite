@@ -126,3 +126,29 @@ function addAnimation(){
 
   
 }
+
+
+// menu scripting
+
+
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+
+  if ((menu.style.transform) === 'translateX(100%)') {
+      // If the menu is hidden, slide it in
+      menu.style.transform = 'translateX(0)';
+      menu.style.borderRadius = '0';
+
+  } else {
+    
+      // If the menu is visible, slide it out
+      menu.style.transform = 'translateX(100%)';
+      menu.style.borderRadius = '30% 0 0 30%';
+
+    }
+}
+
+// just to go back
+function goBack() {
+  window.history.back();
+}

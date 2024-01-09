@@ -1,0 +1,5 @@
+.case-study-img{
+    width: clamp(250px, 100%, 700px);
+    pointer-events: none;
+}
+

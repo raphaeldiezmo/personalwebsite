@@ -8,6 +8,15 @@
 }
 
 
+.back-btn{
+    background-color: transparent;
+    color: rgb(230, 230, 230);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
 
 .menu{
     width: 80px;
@@ -38,3 +47,92 @@
     height: 3px;
     background-color: #d1d1d1;
 }
+
+
+
+/* ============================== */
+/*      NAVIGATION LINK STYLE     */
+/* ============================== */
+nav{
+    height: 100vh;
+
+    background-color: rgb(17, 17, 17);
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    border-radius: 20% 0 0 20% ;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+
+}
+
+nav ul{
+    height: 100%;
+    flex: 90%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 20px;
+}
+nav ul li{
+    font-weight: bolder;
+    text-transform: italic;
+    font-size: 3rem;
+    
+
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    color: transparent; /* Make the text transparent */
+    -webkit-text-stroke: 2px rgb(218, 218, 218); /* Specify the text stroke for WebKit (Safari) */
+    text-stroke: 2px rgb(241, 241, 241); /* Specify the text stroke for Firefox */
+    transition: 0.2s ease;    
+}
+
+
+.nav-link:hover{
+    color: white;
+    transition: 0.2s ease;
+}
+
+
+.active{
+    color: white;
+    pointer-events: none;
+}
+
+.x-button{
+    display: block;
+    top: 2%;    
+    right: 2rem;
+    position: absolute;
+    width: 30px;
+    z-index: 100000;
+
+    height: 30px;
+}
+
+.x-bar{
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: #d1d1d1;
+}
+
+.x-bar:nth-child(1){
+    transform: rotate(-45deg);
+}
+
+.x-bar:nth-child(2){
+    transform: rotate(45deg);
+}
+
+
