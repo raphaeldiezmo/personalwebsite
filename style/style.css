@@ -24,10 +24,26 @@ main{
 /* titles */
 .main-title{
   font-weight: bolder;
-  color: white;
+  width: 100%;
   text-align: center;
-  letter-spacing: 2px;
-  font-family: Arial;
+  padding: 50px 0;
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #333333, #a5a5a5);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+    
 }
 .title{
   color: #ffffff;
@@ -507,7 +523,7 @@ hr{
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .case-study-container{
@@ -684,6 +700,11 @@ footer{
 /* ========================================== */
 @media (max-width: 1200px){
   .information-container{
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px){
+  .case-study-imgs-container{
     flex-direction: column;
   }
 }

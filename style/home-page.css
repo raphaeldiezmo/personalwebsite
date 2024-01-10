@@ -6,7 +6,7 @@
 .home-container{
     position: relative;
     color:#e0e0e0;
-    height: clamp(700px, 100vh, 1080px);
+    height: clamp(700px, 100dvh, 1080px);
     display: flex;
     width: 100%;
   
