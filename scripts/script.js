@@ -2,7 +2,6 @@
 // Description:
 // - This will be the javascript of my personal Website
 
-var body = document.body;
 
 // console.log("JS loaded");
 
@@ -12,16 +11,6 @@ var body = document.body;
 // }
 
 
-// Closing menu
-function close_menu(){
-  var menu = document.querySelector("#menu");
-  menu.style.display = "none";
-  // document.getElementById("menu-display").target.classList.remove('appear');
-  body.style.overflow = "scroll";
-  document.getElementById("full-page-container").style.cssText =
-   "filter: blur(0px);  -webkit-filter: blur(0px);"
-
-}
 
 // ========================================
 //                OBSERVERS
@@ -70,88 +59,3 @@ slider.forEach(slider=>{
 
 
 
-// ===============================================================
-//          INFINITE SCROLLER
-// ===============================================================
-
-const scroller = document.querySelectorAll(".scroller");
-
-if(!window.matchMedia("prefers-reduce-motion: reduce").matches){
-   addAnimation();
-}
-function addAnimation(){
-  scroller.forEach((scroller) => {
-    scroller.setAttribute  ("data-animated", true);
-    const scrollerInner = document.querySelector(".inner-scroller");
-    const scrollerContent = Array.from(scrollerInner.children);
-
-    const scrollerInner2 = document.querySelector(".tech-list-2");
-    const scrollerContent2 = Array.from(scrollerInner2.children);
-
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      scrollerInner.appendChild(duplicatedItem);
-      scrollerInner.appendChild(duplicatedItem);
-
-    });
-    scrollerContent2.forEach((item2) => {
-      const duplicatedItem2 = item2.cloneNode(true);
-      scrollerInner2.appendChild(duplicatedItem2);
-    });
-    console.log(scrollerInner2);
-  });
-
-  
-}
-
-
-// ===============================================================
-//          TOGGLE MENU SCRIPT
-// ===============================================================
-const menu = document.getElementById('menu');
-
-function hideMenu() {
-  if (!((menu.style.transform) === 'translateX(100%)')) {
-    menu.style.transform = 'translateX(100%)';
-    menu.style.borderRadius = '30% 0 0 30%';   
-    document.getElementById("full-page-container").style.cssText =
-    "filter: blur(0px);  -webkit-filter: blur(0px);"
-    body.style.overflow = "scroll";
-
-  }
-}
-
-function toggleMenu() {
-
-  if ((menu.style.transform) === 'translateX(100%)') {
-      // If the menu is hidden, slide it in
-      menu.style.transform = 'translateX(0)';
-      menu.style.borderRadius = '0';
-      document.getElementById("full-page-container").style.cssText =
-      "filter: blur(5px);  -webkit-filter: blur(5px);"
-      body.style.overflow = "hidden";
-  } else {
-    
-      // If the menu is visible, slide it out
-      menu.style.transform = 'translateX(100%)';
-      menu.style.borderRadius = '30% 0 0 30%';     
-      document.getElementById("full-page-container").style.cssText =
-      "filter: blur(0px);  -webkit-filter: blur(0px);"
-      body.style.overflow = "scroll";
-
-  }
-
-
-
-
-  
-}
-
-
-// just to go back
-function goBack() {
-  window.history.back();
-}
-
-
- 
