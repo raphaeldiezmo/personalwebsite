@@ -509,6 +509,83 @@ hr{
   color: white;
 }
 /* ========================================== */
+/*          SKILLS CONTAINER DESIGN           */
+/* ========================================== */
+.skills-container{
+  width: clamp(250px, 90%, 600px);
+  margin: auto;
+  display: flex;
+}
+.skill-name{
+  flex:50%;
+}
+.skill-name ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skill-name ul li{
+  font-size: clamp(1rem, 10vw, 1.2rem);
+  color: #b5b5b5;
+  height: 40px;
+  font-weight: bolder;
+}
+.skill-proficiency{
+  flex:50%;
+}
+.skill-proficiency ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.skill-proficiency ul li{
+  text-align: left;
+  color: #ebebeb;
+  height: 35px;
+  
+  margin-bottom: 5px;
+  width: 100%;
+  background: rgb(91, 91, 91);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.skill-proficiency ul li span{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  height: 100%;
+  background-color: #0a79f7;
+
+}
+.nodejs{
+  width: 50%;
+}
+.html-css{
+  width: 90%;
+ 
+}
+.java-javafx{
+  width: 85%;
+}
+.python{
+  width: 87.5%;
+}
+.sql{
+  width: 50%;
+}
+.nosql{
+  width: 60%;
+}
+.github{
+  width: 90%;
+}
+/* ========================================== */
 /*          CONTACT INFORMATION DESIGN        */
 /* ========================================== */
 .contact-title{
