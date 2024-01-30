@@ -1,5 +1,5 @@
 
-.information-container-contents span, .service-text-content span{
+.information-container-contents span, .skills-container-text-inner span{
     color: hsl(0 0% 100%/0.01);
     background-repeat: no-repeat;
     background-image: linear-gradient(90deg, white,white);
@@ -28,6 +28,8 @@
     animation-range-start: cover 30vh;
     animation-range-end: cover 40vh;
 }
+
+
 @keyframes scroll-reveal {
     to{
         background-size: 100% 100%;
