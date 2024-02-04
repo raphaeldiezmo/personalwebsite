@@ -464,6 +464,8 @@ hr{
 
 .case-study-content-section{
   padding: 50px 0;
+  color: rgb(187, 187, 187);
+
 }
 
 .case-study-contents h4{
@@ -494,9 +496,19 @@ hr{
   width: clamp(250px, 87.5%, 600px);
   margin: auto;
 }
-.research-sentence{
-  font-weight: bold;
+.issue-sentence-container ul{
+  list-style: none;
+  padding: 0;
+}
+.issue-sentence-container b{
   color: white;
+
+}
+
+.outcome-sentence{
+  color: white;
+  font-weight: bolder;
+
 }
 /* ========================================== */
 /*          SKILLS CONTAINER DESIGN           */
