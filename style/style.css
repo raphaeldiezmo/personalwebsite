@@ -99,7 +99,6 @@ hr{
 .section-container{
   margin: auto;
   position: relative;
-  padding:25px 0;
 }
 .container{
   max-width: 800px;
@@ -145,6 +144,11 @@ hr{
   align-items: center;
   flex: 50%;
 }
+
+
+.my-img-container img{
+  border: 2px rgb(65, 65, 65) solid;
+}
 .information-container-contents p, .information-container-contents h4, .read-more-link{
   max-width: 600px;
 }
@@ -174,7 +178,9 @@ hr{
   width: 100%;
   text-align: left;
 }
-
+.read-more-link span:hover{
+  text-decoration: underline;
+}
 .opening-p-span:before{
   content: attr(data-text);
   position: absolute;
@@ -187,9 +193,6 @@ hr{
   width: 100%;
 }
 
-#info-section p span{
-  font-weight: bolder;
-}
 #infoReadMe{
   background-color: transparent;
   border: none;
@@ -751,9 +754,6 @@ footer{
     flex-direction: column;
   }
 }
-
-
-
 
  /* ========================================== */
  /*            TRANSITIONS + ANIMATIONS        */
