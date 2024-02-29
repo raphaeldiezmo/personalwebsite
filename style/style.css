@@ -605,8 +605,11 @@ hr{
   border-radius: 8px;
   background-color: rgb(205, 205, 205);
 }
-.oop, .team-worker{
+.oop{
   width: 80%;
+}
+.ai-machine-learning{
+  width: 60%;
 }
 .web-design{
   width: 85%;
