@@ -396,6 +396,7 @@ hr{
 }
 
 
+<<<<<<< Updated upstream
 
 
 
@@ -408,6 +409,17 @@ hr{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+=======
+.tech-summary-container{
+  position: relative;
+  padding: 30px 0px 20px 0px;
+  max-width: 1000px;
+  margin:auto;
+  border-radius: 8px;
+  background-color: rgba(26, 26, 26, 0.2);
+  box-shadow: 0 0 10px rgba(179, 179, 179, 0.1);
+
+>>>>>>> Stashed changes
 }
 .work-summary-title{
   font-weight: bolder;
