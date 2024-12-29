@@ -47,8 +47,9 @@
     }
 }
 
-
-/* text animation with linear that has infinite animation */
+/* ====================================================================== */
+/* text animation with linear gradient colour that has infinite animation */
+/* ====================================================================== */
 .gradient-text {
     background: linear-gradient(90deg, #75e9a9, #4bebc8, #6696ff, #a872ff, #602adf);
     background-size: 200% 100%;
@@ -72,5 +73,58 @@
     100% {
         background-position: 0% 50%;
         /* Return to the start */
+    }
+}
+
+
+
+/* bar filler animation */
+.skill-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    /* Background of the skill bar */
+    border-radius: 25px;
+    /* Rounded corners */
+    position: relative;
+    /* For positioning the percentage */
+    height: 30px;
+    /* Height of the skill bar */
+    overflow: hidden;
+    /* To hide overflow */
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #4caf50;
+    /* Color of the skill */
+    border-radius: 25px;
+    /* Rounded corners */
+    animation: fillSkillBar 2s forwards;
+    /* Animation for filling the bar */
+}
+
+.skill-percentage {
+    position: absolute;
+    /* Positioning percentage text */
+    width: 100%;
+    text-align: center;
+    /* Center the text */
+    line-height: 30px;
+    /* Align text vertically */
+    font-weight: bold;
+    /* Bold text */
+    color: #fff;
+    /* Text color */
+}
+
+@keyframes fillSkillBar {
+    from {
+        width: 0%;
+        /* Start from 0% */
+    }
+
+    to {
+        width: 80%;
+        /* End at 80% */
     }
 }

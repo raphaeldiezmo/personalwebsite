@@ -1,0 +1,98 @@
+/* ========================================== */
+/*          SKILLS CONTAINER DESIGN           */
+/* ========================================== */
+.skills-container {
+    width: clamp(200px, 87.5%, 1500px);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+}
+
+.skills-container-text {
+    flex: 50%;
+}
+
+.skills-container-text-inner {
+    width: clamp(200px, 100%, 600px);
+    text-align: left;
+    margin: auto;
+
+}
+
+.skills-container-text h2 {
+    color: white;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+.skill-container-skills-list {
+    display: flex;
+    flex: 50%;
+    margin: auto;
+    width: clamp(200px, 100%, 600px);
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-container-skills-list span {
+    color: white;
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.skill-name-percentage {
+    width: clamp(200px, 100%, 500px);
+    margin: auto;
+}
+
+.skill-name-percentage-inner {
+    display: flex;
+    flex-direction: r;
+    justify-content: space-between;
+}
+
+.skill-percentage {
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.skill-bar {
+    width: clamp(200px, 100%, 500px);
+    height: 0.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem auto;
+    background-color: rgb(43, 43, 43);
+}
+
+.skill-bar-percentage {
+    height: 0.3rem;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.oop {
+    width: 80%;
+}
+
+.ai-machine-learning {
+    width: 60%;
+}
+
+.web-design {
+    width: 85%;
+}
+
+.db-management,
+.agile-methodology {
+    width: 90%;
+}
+
+.sql {
+    width: 60%;
+}
