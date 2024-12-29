@@ -30,8 +30,3 @@
 }
 
 
-@keyframes scroll-reveal {
-    to{
-        background-size: 100% 100%;
-    }
-}

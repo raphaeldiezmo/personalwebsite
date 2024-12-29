@@ -28,10 +28,12 @@
     text-align: center;
     padding: 30px;
   }
-  
+  .my-name-container{
+    overflow: hidden;
+  }
   .my-name{
     /* font-family: 'Montserrat', sans-serif; */
-    font-size: clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 5vw, 7rem);
     font-weight: bolder;
    
     /* Fallback: Set a background color. */
@@ -50,6 +52,7 @@
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+
       
   }
 

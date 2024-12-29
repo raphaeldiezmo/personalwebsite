@@ -5,3 +5,46 @@
     align-items: center;
     color: white;
 }
+
+.tech-summary-card figure{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech-summary-card figure img{
+    height: 100%;
+}
+.tech-name {
+    overflow: hidden;
+}
+.tech-name h5{
+    animation: bottomToTop 0.5s ease-in-out;
+}
+
+
+/* current template for this
+
+
+<div class="tech-summary-card">
+    <figure>
+        <img src="images/html.png" alt="HTML">
+    </figure>
+    <div class="tech-name">
+        <h5>
+            HTML / HTML5
+        </h5>
+    </div>
+    <div class="tech-text-summary">
+        <p>
+            Put something in here that can be a small
+            detail for the technology summary
+            can be some type of card 
+        </p>
+    </div>
+</div>
+    
+          
+*/
