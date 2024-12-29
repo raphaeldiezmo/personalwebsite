@@ -1,5 +1,5 @@
 @keyframes scroll-reveal {
-    to{
+    to {
         background-size: 100% 100%;
     }
 }
@@ -10,12 +10,13 @@
     Decription:  This animation goes from bottom to top*/
 @keyframes bottomToTop {
     from {
-      transform: translateY(120%);
+        transform: translateY(120%);
     }
+
     to {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
+}
 
 
 
@@ -24,17 +25,25 @@
 }
 
 
+.appear {
+    animation: appear 2s forwards;
+}
 
 /* small to big animation */
 
 @keyframes appear {
     0% {
-        opacity: 0; /* Start fully transparent */
-        transform: scale(0); /* Start small */
+        opacity: 0;
+        /* Start fully transparent */
+        transform: scale(0);
+        /* Start small */
     }
+
     100% {
-        opacity: 1; /* End fully opaque */
-        transform: scale(1); /* End at original size */
+        opacity: 1;
+        /* End fully opaque */
+        transform: scale(1);
+        /* End at original size */
     }
 }
 
@@ -42,20 +51,26 @@
 /* text animation with linear that has infinite animation */
 .gradient-text {
     background: linear-gradient(90deg, #75e9a9, #4bebc8, #6696ff, #a872ff, #602adf);
-    background-size: 200% 100%; /* Adjusted for smoother transition */
+    background-size: 200% 100%;
+    /* Adjusted for smoother transition */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 8s linear infinite; /* Extended duration for smoothness */
+    animation: gradientMove 8s linear infinite;
+    /* Extended duration for smoothness */
 }
 
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
-        background-position: 100% 50%; /* Move to the end */
+        background-position: 100% 50%;
+        /* Move to the end */
     }
+
     100% {
-        background-position: 0% 50%; /* Return to the start */
+        background-position: 0% 50%;
+        /* Return to the start */
     }
 }
