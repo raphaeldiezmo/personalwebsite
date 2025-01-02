@@ -1,4 +1,100 @@
 /* ========================================== */
+/*        SERVICES SECTION STYLING            */
+/* ========================================== */
+.service-inner {
+    text-align: left;
+}
+
+#service-section {
+    width: 100%;
+
+}
+
+.service-container {
+    padding-top: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.service-text-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    width: clamp(250px, 100%, 1500px);
+    margin: auto;
+}
+
+.service-text-content h1 {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 700;
+    width: 100%;
+}
+
+.service-img-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    flex: 50%;
+}
+
+.web-dev-img-container {
+    border-radius: 30% 70% 74% 26% / 46% 73% 27% 54%;
+    background-color: rgb(215, 255, 252);
+
+}
+
+.app-dev-img {
+    mix-blend-mode: multiply;
+    width: 70%;
+    margin: auto;
+}
+
+.web-dev-service-img {
+    width: 80%;
+    mix-blend-mode: multiply;
+}
+
+.service-text-content p {
+    font-size: 1rem;
+    color: #c1c1c1;
+    letter-spacing: 0.5px;
+}
+
+
+.service-img-container {
+    height: 450px;
+
+    display: flex;
+    overflow: hidden;
+    padding-top: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+
+}
+
+.service-img-container img {
+    z-index: -10000;
+    width: clamp(100px, 90vw, 600px);
+    opacity: 0.5;
+    margin-left: 200px;
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+}
+
+
+/* skill bars styling */
+
+/* ========================================== */
 /*          SKILLS CONTAINER DESIGN           */
 /* ========================================== */
 .skills-container {
@@ -60,6 +156,8 @@
     color: blue;
     font-size: 1.5rem;
     position: inherit;
+    display: flex;
+    justify-content: end;
 }
 
 .skill-bar {
@@ -101,16 +199,18 @@
 
 
 @media (max-width: 1000px) {
-    .skill-name-percentage-inner{
-      width: 100%;
+    .skill-name-percentage-inner {
+        width: 100%;
     }
-    .skill-name{
+
+    .skill-name {
         display: flex;
         justify-content: start;
         align-items: center;
         flex: 90%;
     }
-    .skill-percentage{
+
+    .skill-percentage {
         display: flex;
         justify-content: center;
         align-items: center;

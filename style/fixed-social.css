@@ -1,4 +1,4 @@
-.fixed-socials{
+.fixed-socials {
     position: fixed;
     top: 0;
     left: 0;
@@ -7,16 +7,21 @@
     display: flex;
     gap: 1vw;
 }
-.fixed-socials a{
+
+.fixed-socials a {
     text-decoration: none;
     color: white;
     z-index: 10000;
-    width: clamp(20px, 2vw, 50px);;
+    width: clamp(40px, 2vw, 50px);
+    ;
 
 }
+
 .social-icon {
-    color: #fff; /* Icon color */
-    font-size: clamp(20px, 2vw, 50px);;
+    color: #fff;
+    /* Icon color */
+    font-size: clamp(40px, 2vw, 50px);
+    ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +29,7 @@
     animation: appear 0.5s forwards;
     animation-delay: 0.5s;
 }
-.social-icon + .social-icon{
+
+.social-icon+.social-icon {
     animation-delay: 0.8s;
 }
