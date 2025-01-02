@@ -47,6 +47,7 @@
 .skill-name-percentage {
     width: clamp(200px, 100%, 500px);
     margin: auto;
+
 }
 
 .skill-name-percentage-inner {
@@ -58,6 +59,7 @@
 .skill-percentage {
     color: blue;
     font-size: 1.5rem;
+    position: inherit;
 }
 
 .skill-bar {
@@ -95,4 +97,23 @@
 
 .sql {
     width: 60%;
+}
+
+
+@media (max-width: 1000px) {
+    .skill-name-percentage-inner{
+      width: 100%;
+    }
+    .skill-name{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex: 90%;
+    }
+    .skill-percentage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 10%;
+    }
 }
