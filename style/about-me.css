@@ -1,24 +1,25 @@
-.about-me-container{
+.about-me-container {
     width: 100%;
     padding: 100px 0;
+    z-index: -1;
 }
 
-.content{
+.content {
     width: clamp(250px, 87.5%, 600px);
     margin: auto;
     color: rgb(157, 157, 157);
 
 }
 
-.my-name-container{
+.my-name-container {
     width: clamp(250px, 100%, 800px);
     margin: auto;
 }
 
-.my-name{
-     /* font-family: 'Montserrat', sans-serif; */
-     font-size: clamp(2rem, 8vw, 3.5rem);
-     font-weight: bolder;
+.my-name {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: bolder;
     /* Fallback: Set a background color. */
     background-color: red;
 
@@ -32,13 +33,14 @@
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    
-    
+
+
 }
-.my-img{
+
+.my-img {
     width: clamp(250px, 90%, 500px);
     margin: auto;
     padding-bottom: 20px;
@@ -46,7 +48,8 @@
     justify-content: center;
     align-items: center;
 }
-.my-img img{
+
+.my-img img {
     width: 100%;
     border-radius: 100%;
 
