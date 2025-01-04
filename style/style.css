@@ -500,11 +500,7 @@ footer {
 /* ========================================== */
 /*          DIFFERENT SCREEN SIZE STYLING     */
 /* ========================================== */
-@media (max-width: 1200px) {
-  .information-container {
-    flex-direction: column;
-  }
-}
+
 
 @media (max-width: 1050px) {
   .skills-container {

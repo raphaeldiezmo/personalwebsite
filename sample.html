@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Viewport Animation</title>
+  <style>
+    .box {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .box.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .box.out-of-view {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .container {
+      height: 300vh; /* Make page scrollable */
+    }
+
+    .box-wrapper {
+      margin: 150px auto;
+      width: 300px;
+      height: 200px;
+      background: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box-wrapper">
+      <div class="box">Watch Me</div>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const box = entry.target;
+
+        // If entering the bottom 30% of the viewport
+        if (entry.intersectionRatio > 0 && entry.boundingClientRect.top > window.innerHeight * 0.7) {
+          box.classList.add('in-view');
+          box.classList.remove('out-of-view');
+        } 
+        // If exiting past the top 20% of the viewport
+        else if (entry.boundingClientRect.bottom < window.innerHeight * 0.2) {
+          box.classList.add('out-of-view');
+          box.classList.remove('in-view');
+        }
+      });
+    }, {
+      threshold: [0.1], // Small threshold to detect when the element is partly visible
+    });
+
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach(box => observer.observe(box));
+  </script>
+</body>
+</html>

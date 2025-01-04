@@ -7,6 +7,7 @@
     text-align: left;
     background-color: rgb(9, 9, 9);
     padding: 100px 0;
+  
 
 }
 
@@ -33,6 +34,8 @@
 }
 
 
+
+
 .my-img-container img {
     border: 2px rgb(65, 65, 65) solid;
 }
@@ -45,8 +48,10 @@
 
 .about-me-title {
     width: 100%;
+    font-size: clamp(2rem, 2vw, 4rem);
+    letter-spacing: .5rem;
+    font-weight:100;
     text-align: left;
-    font-weight: bolder;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
@@ -55,12 +60,14 @@
     font-size: 1rem;
     letter-spacing: 1px;
     color: #c1c1c1;
+    font-weight: 100;
+    opacity: 0;
 }
 
 .opening-paragraph {
-    font-weight: bolder;
+    font-weight: 600;
     font-family: Arial;
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 100%;
 }
 
@@ -72,9 +79,7 @@
     text-align: left;
 }
 
-.read-more-link span:hover {
-    text-decoration: underline;
-}
+
 
 .opening-p-span:before {
     content: attr(data-text);
@@ -101,3 +106,18 @@
     display: none;
     transition: 0.5s ease;
 }
+
+
+/* responsiveness */
+@media (max-width: 1200px) {
+    .information-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .opening-paragraph{
+        
+    }
+
+
+  }

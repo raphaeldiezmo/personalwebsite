@@ -59,3 +59,4 @@ slider.forEach(slider=>{
 
 
 
+

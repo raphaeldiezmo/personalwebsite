@@ -67,6 +67,12 @@
   <main id="full-page-container" onclick="hideMenu()">
 
 
+
+
+
+
+
+
     <section id="home-section" class="section-container">
       <div class="home-container">
         <div class="wrapper">
@@ -139,42 +145,56 @@
 
 
 
+
+
+
+
+
+
     <section id="info-section" class="section-container">
       <div class="information-container">
         <div class="my-img-container  delay-trans">
-          <img class="appear" src="images/me.png" alt="it's just my photo">
+          <img class="appear show animation-start-with-viewport" src="images/me.png" alt="it's just my photo">
         </div>
         <div class="information-container-contents">
-          <h4 class="about-me-title small-titles">
-            <span>
+          <h4 class="about-me-title bottomToTop-text">
+            <span class="appear show">
               About me
             </span>
           </h4>
-          <p class="opening-paragraph">
+          <p class="opening-paragraph appear show">
             <span>
               I completed the course, BSc Software Development
               at MTU, Cork, Ireland
             </span>
 
           </p>
-          <p class="normal-text">
-            <span>
-              Passionate tech enthusiast, versatile developer,
-              and creative spirit with a love for continuous learning.
-              Beyond my professional roles, I explore photography,
-              music, and maintain a healthy lifestyle. From barista
-              to chef, I bring adaptability and a unique perspective
-              to each project.
+          <p class="normal-text appear show">
+            <span class="appear">
+              Passionate tech enthusiast, versatile developer, 
+              and creative spirit with a love for continuous 
+              learning. Beyond my professional roles, I explore 
+              photography, music, and prioritize maintaining a 
+              healthy lifestyle. With adaptability and a unique 
+              perspective, I bring creativity and dedication to 
+              every project I undertake.
             </span>
 
 
           </p>
-          <a class="read-more-link" href="about/me">
-            Read more
+          <a class="read-more-link " href="about/me">
+            Learn more 
+            <span class="arrow">→</span>
           </a>
         </div>
       </div>
     </section>
+
+
+
+
+
+
 
 
 
@@ -192,7 +212,7 @@
                   <h2 class="gradient-text">
                     My Programming Skills
                   </h2>
-                  <p class="normal-text">
+                  <p class="normal-text appear">
                     <span>
                       I excel as a collaborative team player, fostering a dynamic and synergistic work environment. My
                       proficiency extends beyond individual programming expertise to seamless teamwork, ensuring
@@ -303,6 +323,12 @@
 
 
 
+
+
+
+
+
+
     <section class="tech-summary">
 
       <h2 class="main-title">Technology Summary</h2>
@@ -346,6 +372,13 @@
     </section>
 
 
+
+
+  
+
+
+
+
     <section id="portfolio-section" class="section-container ">
       <div class="work-summary-container">
         <div class="work-summary-title-container">
@@ -369,11 +402,6 @@
         </div>
       </div>
     </section>
-
-
-
-
-
 
 
 
@@ -425,6 +453,7 @@
 
   <script src="scripts/script.js" charset="utf-8"></script>
   <script src="scripts/infinite-scroller.js"></script>
+  <script src="scripts/viewport-animation-checker.js"></script>
   <script src="scripts/menu-functionality.js"></script>
 
   <script src="https://kit.fontawesome.com/1ad75f310c.js" crossorigin="anonymous"></script>

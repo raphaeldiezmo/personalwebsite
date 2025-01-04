@@ -1,9 +1,11 @@
 @keyframes scroll-reveal {
+    from{
+        background-size: 0% 0%;
+    }
     to {
         background-size: 100% 100%;
     }
 }
-
 
 
 /* bottomToTop
@@ -32,6 +34,9 @@
 }
 
 
+
+
+
 .appear {
     animation: appear 2s forwards;
 }
@@ -53,6 +58,17 @@
         /* End at original size */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* ====================================================================== */
 /* text animation with linear gradient colour that has infinite animation */
@@ -82,10 +98,16 @@
         /* Return to the start */
     }
 }
+/* GRADIENT TEXT ANIMATION END */
 
 
 
-/* bar filler animation */
+
+
+
+
+
+/* BAR FILLER AMIMATION START */
 .skill-container {
     width: 100%;
     background-color: #e0e0e0;
@@ -135,3 +157,87 @@
         /* End at 80% */
     }
 }
+
+/* BAR FILLER ANIMATION END */
+
+
+
+
+
+
+
+/* JUST FOR ARROW ANIMATION START */
+.arrow {
+    position: relative;
+    transition:  0.5s ease;
+
+  }
+  .read-more-link:hover{
+    background: linear-gradient(90deg, #75e9a9, #4bebc8, #6696ff, #a872ff, #602adf);
+    background-size: 200% 100%;
+    /* Adjusted for smoother transition */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s linear infinite;
+  }
+
+  .read-more-link:hover .arrow{
+    background: linear-gradient(90deg, #75e9a9, #4bebc8, #6696ff, #a872ff, #602adf);
+    background-size: 200% 100%;
+    /* Adjusted for smoother transition */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s linear infinite;
+    margin-left: 5px;
+    font-weight: 800;
+  }
+
+
+/* JUST FOR ARROW ANIMATION END */
+
+
+
+
+
+
+
+
+
+/* TECH-ON-SCROLL ANIMATION START */
+  /* 
+.information-container-contents span, .skills-container-text-inner span{
+    color: hsl(0 0% 100%/0.01);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(90deg, white,white);
+    background-clip: text;
+    background-size: 0% 100%;
+    animation: scroll-reveal linear forwards; 
+    animation-timeline: view(y);
+}
+
+.about-me-title span, .title span{ 
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 30vh;
+}
+.opening-paragraph span{ 
+    animation-range-start: cover 25vh;
+    animation-range-end: cover 33vh;
+}
+.normal-text span{
+    animation-range-start: cover 30vh;
+    animation-range-end: cover 50vh;
+    background-image: linear-gradient(90deg, rgb(167, 167, 167),rgb(175, 175, 175));
+
+}
+
+.read-more-link span, .animation-start-with-viewport{
+    animation-range-start: cover 30vh;
+    animation-range-end: cover 40vh;
+}
+
+ */
+
+ /* TECH ON SCROLL ANIMATION END */
+
+
+
