@@ -1,29 +1,47 @@
-.tech-summary-card{
+.tech-summary-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 30px 0;
+    flex-basis: 170px;
+    background-color: rgba(11, 26, 55, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+
 }
 
-.tech-summary-card figure{
-    width: 100px;
-    height: 100px;
+.tech-summary-card figure {
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tech-summary-card figure img{
+
+.tech-summary-card figure img {
     height: 100%;
 }
+
 .tech-name {
     overflow: hidden;
 }
-.tech-name h5{
+
+.tech-name h5 {
+    font-size: clamp(0.9rem, 2vw, 0.9rem);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     animation: bottomToTop 0.5s ease-in-out;
 }
 
+.css {
+    width: 90px;
+    height: 90px;
+}
 
 /* current template for this
 
@@ -48,5 +66,3 @@
     
           
 */
-
-
