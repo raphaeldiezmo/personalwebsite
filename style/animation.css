@@ -36,9 +36,10 @@
 
 
 
-
 .appear {
-    animation: appear 2s forwards;
+    animation: appear 1s linear forwards;
+    /* animation-timeline: view();
+    animation-range: entry 0% cover 40%; */
 }
 
 /* small to big animation */

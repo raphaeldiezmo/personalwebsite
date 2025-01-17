@@ -1,24 +1,27 @@
-// Select all elements that need animation
-const animatedElements = document.querySelectorAll
-('.appear');
+// Reusable Scroll Animation Handler
+function handleScrollAnimation(animationConfig) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(animationConfig.visibleClass);
+          observer.unobserve(entry.target); // Stop observing once animation is triggered
+        }
+      });
+    },
+    {
+      threshold: animationConfig.threshold || 0.5, // Default to 50% visibility
+    }
+  );
 
-// Intersection Observer to detect visibility
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Add 'visible' class to trigger animation
-        entry.target.classList.add('visible');
-      } else {
-        // Optional: Remove 'visible' class when out of view
-        entry.target.classList.remove('visible');
-      }
-    });
-  },
-  {
-    threshold: 1.0, // Fully in the viewport
-  }
-);
+  animationConfig.elements.forEach((el) => observer.observe(el));
+}
 
-// Observe each element
-animatedElements.forEach((el) => observer.observe(el));
+// Initialize Animations
+document.addEventListener("DOMContentLoaded", () => {
+  handleScrollAnimation({
+    elements: document.querySelectorAll(".appear"), // Replace with your class
+    visibleClass: "visible",
+    threshold: 0.5,
+  });
+});
