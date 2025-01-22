@@ -92,7 +92,9 @@
 
 }
 
-.case-study section {}
+.case-study+* {
+    flex-direction: row-reverse;
+}
 
 .case-study p {
     text-decoration: none;
@@ -121,10 +123,7 @@
     gap: 10px;
 }
 
-.case-study-technology-use img {
-    height: 50px;
-    width: fit-content;
-}
+
 
 .case-study button {
     background-color: transparent;
@@ -140,7 +139,7 @@
 
 }
 
-] .case-study-img img:hover {
+.case-study-img img:hover {
     transform: scale(1.1);
     border-radius: 8px;
 
@@ -207,4 +206,22 @@
     color: white;
     font-weight: bolder;
 
+}
+
+
+
+@media screen and (max-width:800px) {
+    .case-study {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .case-study img {
+        width: 100%;
+    }
+}
+
+.case-study-technology-use img {
+    height: 50px;
+    width: fit-content;
 }

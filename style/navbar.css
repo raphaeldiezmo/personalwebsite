@@ -167,7 +167,10 @@ nav ul li {
     color: white;
     z-index: 10;
     right: 2.5%;
+    opacity: 0;
     top: 20px;
+    animation: topToBottom 2s forwards;
+    animation-delay: 0.5s;
 
 }
 
