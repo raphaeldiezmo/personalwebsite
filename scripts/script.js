@@ -16,10 +16,11 @@
 //                OBSERVERS
 // ========================================
 
-const fader = document.querySelectorAll('.fade-in');
+const fader = document.querySelectorAll('.fade-in, .appear');
 const slider = document.querySelectorAll('.slider');
+
 const appearOptions = {
-  threshold: 0, rootMargin: "0px 0px -250px 0px"
+  threshold: 0, rootMargin: "0px 0px -200px 0px"
 };
 
 
@@ -28,30 +29,30 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver(
   // contains function that has an entries and
   // appearOnScroll parameter
-  function(
+  function (
     entries, appearOnScroll
-  ){
+  ) {
     // running to every each entry
     entries.forEach(entry => {
-      if(entry.isIntersecting){
+      if (entry.isIntersecting) {
         entry.target.classList.add('appear');
         appearOnScroll.unobserve(entry.target);
 
       }
       // if an entry doesn't intersect, it'll
       // add the appear class in the entry
-      else{
+      else {
         entry.target.classList.remove('appear');
       }
     })
   }, appearOptions
 );
 
-fader.forEach(fader=>{
+fader.forEach(fader => {
   appearOnScroll.observe(fader);
 })
 
-slider.forEach(slider=>{
+slider.forEach(slider => {
   appearOnScroll.observe(slider);
 })
 

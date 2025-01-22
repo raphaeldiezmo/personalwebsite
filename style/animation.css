@@ -52,7 +52,12 @@ comment: it goes well with the boxes for animation */
 
 
 .appear {
+    opacity: 0;
+}
+
+.appear.appear {
     animation: appear 2s forwards;
+
 }
 
 /* small to big animation */
@@ -266,3 +271,18 @@ comment: it goes well with the boxes for animation */
  */
 
 /* TECH ON SCROLL ANIMATION END */
+
+
+
+
+
+/* APPEAR ON SITE - ANIMATION START */
+.fade-in {
+
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}

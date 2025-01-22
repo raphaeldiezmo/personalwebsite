@@ -6,7 +6,9 @@
     background: none;
     width: clamp(250px, 95%, 1960px);
     margin: 2rem auto;
+
     z-index: 10000;
+    display: none;
 
 }
 
@@ -154,4 +156,39 @@ nav ul li {
 
 .x-bar:nth-child(2) {
     transform: rotate(45deg);
+}
+
+
+
+
+/*  */
+.fixed-nav-desktop {
+    position: fixed;
+    color: white;
+    z-index: 10;
+    right: 2.5%;
+    top: 20px;
+
+}
+
+.fixed-nav-desktop ul {
+    list-style: none;
+    display: flex;
+}
+
+.fixed-nav-desktop .nav-link {
+    font-size: clamp(0.8rem, 1vw, 0.6rem);
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 720px) {
+    .fixed-top {
+        display: flex;
+    }
+
+    .fixed-nav-desktop {
+        display: none;
+    }
 }

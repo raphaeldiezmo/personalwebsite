@@ -69,6 +69,7 @@
     font-family: Arial;
     font-size: 1.3rem;
     width: 100%;
+    opacity: 0;
 }
 
 .read-more-link {

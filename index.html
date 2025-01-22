@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="style/home-section.css">
   <link rel="stylesheet" href="style/links.css">
   <link rel="stylesheet" href="style/case-study.css">
+  <link rel="stylesheet" href="style/portfolio.css">
   <link rel="stylesheet" href="style/navbar.css">
   <link rel="stylesheet" href="style/info-section.css">
   <link rel="stylesheet" href="style/tech-summary-card.css">
@@ -37,11 +38,21 @@
   <div class="fixed-socials">
     <a class="social-icon ig" href="https://www.instagram.com/raphaeldiezmo/" target="_blank">
       <i class="fab fa-instagram"></i>
-    </a>
+    </a> <span class="divider"></span>
+
     <a class="social-icon fb" href="https://www.facebook.com/ezmmo" target="_blank">
       <i class="fab fa-facebook-f"></i>
     </a>
   </div>
+
+  <div class="fixed-nav-desktop">
+    <ul>
+      <li><a href="#" class="nav-link active">Home</a> </li>
+      <li><a href="about/" class="nav-link">About Me</a> </li>
+      <li><a href="#portfolio-section" class="nav-link">Portfolio</a> </li>
+    </ul>
+  </div>
+
   <div class="fixed-top">
     <!-- fixed menu bars -->
     <button class="menu" onclick="toggleMenu()">
@@ -66,8 +77,6 @@
 
 
   <main id="full-page-container" onclick="hideMenu()">
-
-
 
 
 
@@ -151,26 +160,26 @@
 
 
 
-
+    <!-- info section -->
     <section id="info-section" class="section-container">
       <div class="information-container">
         <div class="my-img-container  delay-trans">
-          <img class="appear show animation-start-with-viewport" src="images/me.png" alt="it's just my photo">
+          <img class="appear " src="images/me.png" alt="it's just my photo">
         </div>
         <div class="information-container-contents">
           <h4 class="about-me-title bottomToTop-text">
-            <span class="appear show">
+            <span class="fade-in">
               About me
             </span>
           </h4>
-          <p class="opening-paragraph appear show">
+          <p class="opening-paragraph appear ">
             <span>
               I completed the course, BSc Software Development
               at MTU, Cork, Ireland
             </span>
 
           </p>
-          <p class="normal-text appear show">
+          <p class="normal-text appear ">
             <span class="appear">
               Passionate tech enthusiast, versatile developer,
               and creative spirit with a love for continuous
@@ -350,6 +359,16 @@
             <h5>CSS</h5>
           </div>
         </div>
+
+
+        <div class="tech-summary-card appear-with-on-scroll-animation">
+          <figure class="tech-image-container">
+            <img src="images/js.png" alt="">
+          </figure>
+          <div class="tech-name">
+            <h5>javascript</h5>
+          </div>
+        </div>
         <div class="tech-summary-card appear-with-on-scroll-animation">
           <figure class="tech-image-container">
             <img class="java-img" src="images/java.png" alt="java">
@@ -432,6 +451,7 @@
         </div>
 
 
+
       </div>
     </section>
 
@@ -450,21 +470,88 @@
             Case Studies
           </h2>
         </div>
-        <h1 class="gradient-text">Currently working on - design wise</h1>
-        <!-- <div class="case-study-imgs-container">
-          <a href="case-study/glyntown-care">
 
-            <div class="case-study-img">
-              <img src="images/glyntowncare.png" alt="">
-            </div>
-          </a>
 
-          <a href="pages/glyntown-case-study.html">
-            <div class="case-study-img">
-              <img src="images/reclessreviews.png" alt="Currently in Progress..">
+        <!-- <div class="case-study-slider">
+          <div class="case-study-card">
+            <div class="case-study-image-container">
+              <img src="images/case-study-1.png" alt="case study 1">
             </div>
-          </a>
+          </div>
         </div> -->
+        <div class="case-study-imgs-container">
+
+          <div class="case-study">
+            <img src="images/glyntowncare.png" alt="">
+            <section>
+
+              <div class="case-study-challenges-container">
+                <span>Challenges</span>
+                <p>The website suffers from outdated design, unclear information, security flaws, and SEO neglect.
+
+                </p>
+              </div>
+              <div class="case-study-objective-container">
+                <span>Objectives</span>
+                <p>
+                  I will redesign and modernise the website, improve information accessibility, implement an SSL
+                  certificate, and optimise for SEO.
+                </p>
+
+              </div>
+              <div class="case-study-technology-use">
+                <span>Technology used</span>
+                <div>
+                  <img src="images/html.png" alt="">
+                  <img src="images/css.png" alt="">
+                  <img src="images/js.png" alt="">
+                  <img src="images/python.png" alt="">
+                </div>
+
+
+              </div>
+              <a href="case-study/glyntown-care">
+                <button>Read more</button></a>
+            </section>
+          </div>
+          <div style="flex-direction: row-reverse;" class="case-study">
+            <img src="images/reclessreviews.png" alt="">
+            <section>
+
+              <div class="case-study-challenges-container">
+                <span>Challenges</span>
+                <p>The website suffers from outdated design, unclear information, security flaws, and SEO neglect.
+
+                </p>
+              </div>
+              <div class="case-study-objective-container">
+                <span>Objectives</span>
+                <p>
+                  I will redesign and modernise the website, improve information accessibility, implement an SSL
+                  certificate, and optimise for SEO.
+                </p>
+
+              </div>
+              <div class="case-study-technology-use">
+                <span>Technology used</span>
+                <div>
+                  <img src="images/html.png" alt="">
+                  <img src="images/css.png" alt="">
+                  <img src="images/js.png" alt="">
+                  <img src="images/python.png" alt="">
+                </div>
+
+
+              </div>
+              <a href="case-study/glyntown-care">
+                <button>Read more</button></a>
+            </section>
+          </div>
+
+
+
+
+        </div>
 
 
       </div>

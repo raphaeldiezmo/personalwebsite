@@ -1,12 +1,13 @@
 .fixed-socials {
     position: fixed !important;
-    top: 0;
+    bottom: 10px;
     left: 0;
     margin: 30px 30px;
     z-index: 10000;
     display: flex;
-    /* testing */
-    /*  */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1vw;
 }
 
@@ -21,7 +22,7 @@
 
 .social-icon {
     color: #fff;
-    font-size: clamp(40px, 2vw, 50px);
+    font-size: clamp(1rem, 2vw, 1.5rem);
 
     display: flex;
     justify-content: center;
@@ -50,4 +51,11 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     transition: 1s ease;
+}
+
+
+.divider {
+    width: 1px;
+    height: 50px;
+    background-color: white;
 }
