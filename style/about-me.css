@@ -26,11 +26,6 @@
 
 }
 
-@media screen and (max-width: 700px) {
-    .content {
-        flex-direction: column;
-    }
-}
 
 .my-name-container {
     width: clamp(250px, 100%, 800px);
@@ -81,4 +76,12 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     animation: appear 0.5s forwards;
 
+}
+
+@media screen and (max-width: 900px) {
+    .about-me-container section {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
 }
