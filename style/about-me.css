@@ -26,6 +26,12 @@
 
 }
 
+@media screen and (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
 .my-name-container {
     width: clamp(250px, 100%, 800px);
     margin: auto;
