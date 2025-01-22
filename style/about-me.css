@@ -4,22 +4,40 @@
     z-index: -1;
 }
 
+.about-me-container section {
+    display: flex;
+    width: clamp(300px, 70%, 1000px);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+
+}
+
 .content {
-    width: clamp(250px, 87.5%, 600px);
+    width: clamp(250px, 87.5%, 500px);
     margin: auto;
     color: rgb(157, 157, 157);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
 
 }
 
 .my-name-container {
     width: clamp(250px, 100%, 800px);
     margin: auto;
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 0.5s;
 }
 
 .my-name {
     /* font-family: 'Montserrat', sans-serif; */
-    font-size: clamp(2rem, 8vw, 3.5rem);
-    font-weight: bolder;
+    font-size: clamp(2rem, 8vw, 3rem);
+    font-weight: light;
     /* Fallback: Set a background color. */
     background-color: red;
 
@@ -38,6 +56,8 @@
     -moz-text-fill-color: transparent;
 
 
+
+
 }
 
 .my-img {
@@ -50,7 +70,9 @@
 }
 
 .my-img img {
-    width: 100%;
-    border-radius: 100%;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: appear 0.5s forwards;
 
 }

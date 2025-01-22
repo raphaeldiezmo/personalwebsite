@@ -126,7 +126,6 @@ nav ul li {
 
 
 .active {
-    color: white;
     pointer-events: none;
 }
 
@@ -193,5 +192,10 @@ nav ul li {
 
     .fixed-nav-desktop {
         display: none;
+    }
+
+    .active {
+        color: rgb(255, 255, 255);
+
     }
 }
