@@ -5,7 +5,7 @@
     width: 100%;
     color: white;
     text-align: left;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(19, 22, 27);
     padding: 100px 0;
 
 
@@ -37,7 +37,9 @@
 
 
 .my-img-container img {
-    border: 2px rgb(65, 65, 65) solid;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
 }
 
 .information-container-contents p,
@@ -54,8 +56,12 @@
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 10px;
+    overflow: hidden;
 }
-
+.about-me-title span{
+    width: 100%;
+    animation: bottomToTop 1s forwards;
+}
 .normal-text {
     font-size: 1rem;
     letter-spacing: 1px;

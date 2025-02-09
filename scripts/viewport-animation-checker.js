@@ -20,7 +20,7 @@ function handleScrollAnimation(animationConfig) {
 // Initialize Animations
 document.addEventListener("DOMContentLoaded", () => {
   handleScrollAnimation({
-    elements: document.querySelectorAll(".appear"), // Replace with your class
+    elements: document.querySelectorAll(".appear", ".bottomToTop-text"), // Replace with your class
     visibleClass: "visible",
     threshold: 0.5,
   });
