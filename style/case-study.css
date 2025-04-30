@@ -74,6 +74,7 @@
     align-items: center;
 
 
+
 }
 
 .case-study {
@@ -139,10 +140,35 @@
 
 }
 
-.case-study-img img:hover {
-    transform: scale(1.1);
-    border-radius: 8px;
+.landing-case-study {
+    display: flex;
+    width: clamp(300px, 90%, 1000px);
+    gap: 50px;
+    margin-top: 100px;
+}
 
+.landing-case-study-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: start;
+
+
+}
+
+.landing-case-study-text h1 {
+    font-size: clamp(2rem, 10vw, 4rem);
+}
+
+.case-study-img {
+    margin: auto;
+    text-align: center;
+}
+
+.case-study-img img {
+    width: clamp(300px, 100%, 600px);
+    margin: auto;
 }
 
 .case-study-contents {
