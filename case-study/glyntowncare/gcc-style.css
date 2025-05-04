@@ -1,0 +1,48 @@
+.old-photos-carousel{
+    display: flex;
+    overflow: hidden;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    gap: 10vh;
+}
+.old-photos-carousel figure{
+    height: 80vh;
+
+}   
+.old-photos-carousel figure img{
+    height: 100%;
+}
+.old-photos-carousel {
+    animation: scroll-carousel 160s linear infinite;
+  }
+  
+  @keyframes scroll-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* -100% * (number of images - 1) / number of images */
+      /* For 12 images, move left by 100% of the container */
+      transform: translateX(-50%); /* (12-1)/12 = 91.66%, but adjust as needed */
+    }
+  }
+  .old-photos-carousel:hover {
+    animation-play-state: paused !important;
+  }
+
+  #back-btn, nav{
+    display: block;
+    z-index: 100;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+  }
+  #back-btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
