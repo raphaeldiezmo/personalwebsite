@@ -31,18 +31,24 @@
     animation-play-state: paused !important;
   }
 
-  #back-btn, nav{
+  .back-btn{
     display: block;
     z-index: 100;
     color: white;
     position: fixed;
-    top: 0;
+    top: 20px;
+    left: 0;
     width: 100%;
     margin: auto;
   }
-  #back-btn a{
+  .back-btn a{
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
+    padding: 0 20px;
   }
 
+
+  .case-study-contents{
+    width: 100%;
+  }
