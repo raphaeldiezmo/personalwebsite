@@ -60,5 +60,81 @@
       carouselTrack.appendChild(clone);
     });
   }
+
+  /* ------------------------------------------------------------------
+     4. Lightbox — click a screenshot to view it large, X to close
+     ------------------------------------------------------------------ */
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+  const lightboxClose = document.querySelector(".lightbox-close");
+
+  const isLightboxOpen = () => lightbox.classList.contains("is-open");
+
+  const openLightbox = (slide) => {
+    if (!lightbox || !slide) return;
+
+    const img = slide.querySelector("img");
+    if (!img) return;
+
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = slide.dataset.caption || img.alt;
+
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    if (!isLightboxOpen()) return;
+
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    // Reset after the fade-out transition completes
+    window.setTimeout(() => {
+      if (!isLightboxOpen()) {
+        lightboxImg.src = "";
+        lightboxImg.alt = "";
+        lightboxCaption.textContent = "";
+      }
+    }, 300);
+
+    document.body.style.overflow = "";
+  };
+
+  // Open when any carousel slide (original or clone) is clicked
+  const allSlides = document.querySelectorAll(".carousel-slide");
+  allSlides.forEach((slide) => {
+    slide.setAttribute("tabindex", "0");
+    slide.setAttribute("role", "button");
+    slide.addEventListener("click", () => openLightbox(slide));
+    slide.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openLightbox(slide);
+      }
+    });
+  });
+
+  // Close via X button
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+  }
+
+  // Close via backdrop click
+  if (lightbox) {
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  // Close via Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isLightboxOpen()) {
+      closeLightbox();
+    }
+  });
 })();
 
