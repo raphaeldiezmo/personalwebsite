@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raphael Di Ezmo — Freelance software & web developer based in Cork, Ireland. I turn ideas into digital reality.">
+  <title>Raphael Di Ezmo — Software & Web Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+
+  <!-- Fixed social rail -->
+  <div class="fixed-socials" aria-hidden="true">
+    <a href="https://www.instagram.com/raphaeldiezmo/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle>
+      </svg>
+    </a>
+    <span class="divider"></span>
+    <a href="https://www.facebook.com/ezmmo" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo">Raphael<span class="dot">.</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="about/">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="mailto:raphaeldiezmo@gmail.com" class="nav-cta">Reach Out</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#">Home</a>
+    <a href="about/">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="mailto:raphaeldiezmo@gmail.com">Reach Out</a>
+  </nav>
+
+  <main>
+
+<!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-split">
+        <div class="hero-text">
+          <span class="hero-badge reveal">
+            <span class="pulse"></span>
+            Open for freelance work
+          </span>
+
+          <h1 class="hero-title">
+            <span class="line-1 reveal">Hi there! I'm</span>
+            <span class="gradient-text reveal" style="--reveal-delay:.1s">Raphael Di Ezmo</span>
+          </h1>
+
+          <p class="hero-location reveal" style="--reveal-delay:.2s">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Cork, Ireland
+          </p>
+
+          <p class="hero-description reveal" style="--reveal-delay:.3s">
+            I'm a freelance software and web developer, passionate about turning ideas into digital reality.
+            Let's create something awesome together!
+          </p>
+
+          <div class="hero-ctas reveal" style="--reveal-delay:.4s">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="mailto:raphaeldiezmo@gmail.com" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--reveal-delay:.25s">
+          <div class="code-window">
+            <div class="code-window__head">
+              <div class="code-window__dots">
+                <span class="code-window__dot"></span>
+                <span class="code-window__dot"></span>
+                <span class="code-window__dot"></span>
+              </div>
+              <span class="code-window__file">raphael.js</span>
+            </div>
+            <div class="code-window__body">
+              <div class="code-line">
+                <span class="ln">01</span>
+                <span class="kw">const</span> <span class="fn">raphael</span> = <span class="kw">new</span> <span class="fn">Developer</span>({
+              </div>
+              <div class="code-line">
+                <span class="ln">02</span>
+                <span class="indent">role:</span> <span class="str">"freelance web &amp; software dev"</span>,
+              </div>
+              <div class="code-line">
+                <span class="ln">03</span>
+                <span class="indent">location:</span> <span class="str">"Cork, Ireland 🇮🇪"</span>,
+              </div>
+              <div class="code-line">
+                <span class="ln">04</span>
+                <span class="indent">stack:</span> [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>, <span class="str">"React"</span>, ...],
+              </div>
+              <div class="code-line">
+                <span class="ln">05</span>
+                <span class="indent">coffeeLevel:</span> <span class="num">99</span>,
+              </div>
+              <div class="code-line">
+                <span class="ln">06</span>
+                <span class="indent">availability:</span> <span class="bool">true</span> <span class="com">// yes, I'm free!</span>
+              </div>
+              <div class="code-line">
+                <span class="ln">07</span>
+                <span class="indent">});</span>
+              </div>
+              <div class="code-line">
+                <span class="ln">08</span>
+                <span class="com">// if (you.haveAnIdea) {</span>
+              </div>
+              <div class="code-line">
+                <span class="ln">09</span>
+                <span class="com">//   reachOut(); ✨</span>
+              </div>
+              <div class="code-line">
+                <span class="ln">10</span>
+                <span class="com">// }</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dev-status" aria-hidden="true">
+            <span class="dev-status__label">status:</span>
+            <span class="dev-status__viewport">
+              <span class="dev-status__track">
+                <span class="dev-status__msg">Fixing bugs I created at 3am ☕</span>
+                <span class="dev-status__msg">It works on my machine... probably</span>
+                <span class="dev-status__msg">Turning coffee into code since 2019</span>
+                <span class="dev-status__msg">Deleting node_modules... (nervous)</span>
+                <span class="dev-status__msg" aria-hidden="true">Fixing bugs I created at 3am ☕</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-word">HTML5</span>
+        <span class="marquee-word">CSS/SCSS</span>
+        <span class="marquee-word">REACT</span>
+        <span class="marquee-word">ANGULAR</span>
+        <span class="marquee-word">NODE.JS</span>
+        <span class="marquee-word">JAVA</span>
+        <span class="marquee-word">PYTHON</span>
+        <span class="marquee-word">SQL</span>
+        <span class="marquee-word">GITHUB</span>
+        <span class="marquee-word">MONGODB</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <figure class="about-photo reveal">
+          <img src="images/me.png" alt="Portrait of Raphael Di Ezmo" loading="lazy">
+          <figcaption class="exp-badge">
+            <strong>BSc</strong>
+            Software Development · MTU
+          </figcaption>
+        </figure>
+
+        <div class="about-text">
+          <span class="section-label reveal">About me</span>
+          <h2 class="section-title reveal">Turning ideas into digital reality</h2>
+          <p class="reveal">
+            I completed the course <strong>BSc Software Development</strong> at MTU, Cork, Ireland.
+          </p>
+          <p class="reveal">
+            Passionate tech enthusiast, versatile developer, and creative spirit with a love for continuous learning.
+            Beyond my professional roles, I explore photography, music, and prioritize maintaining a healthy lifestyle.
+            With adaptability and a unique perspective, I bring creativity and dedication to every project I undertake.
+          </p>
+          <a href="about/" class="about-link reveal">
+            Learn more about me
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT I CAN DO ============ -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="skills-head">
+          <span class="section-label reveal">What I can do</span>
+          <h2 class="section-title reveal">Full-stack, from idea to launch</h2>
+          <p class="section-sub reveal">
+            I build, ship, and maintain complete digital products — from database-backed systems
+            and APIs to websites, mobile and desktop apps. If you can dream it, I can build it,
+            secure it, deploy it, and keep it running.
+          </p>
+        </div>
+
+        <div class="cap-grid">
+
+          <!-- Database-Integrated Systems -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </span>
+            <h3>Database-Integrated Systems</h3>
+            <p>Complete systems connected to SQL &amp; NoSQL databases — structured, reliable, and built to scale.</p>
+          </article>
+
+          <!-- API Development -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </span>
+            <h3>API Development &amp; Integration</h3>
+            <p>Design, build, and connect APIs so your apps, services, and third-party tools talk to each other seamlessly.</p>
+          </article>
+
+          <!-- Mobile Apps -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </span>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile apps with clean UX — Android Studio, Firebase, and modern tooling.</p>
+          </article>
+
+          <!-- Desktop Apps -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </span>
+            <h3>Desktop App Development</h3>
+            <p>Robust desktop applications powered by Java and Python — dependable tools that get real work done.</p>
+          </article>
+
+          <!-- Cybersecurity -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </span>
+            <h3>Cybersecurity</h3>
+            <p>Secure websites and systems by default — SSL, secure architecture, and protection against common threats.</p>
+          </article>
+
+          <!-- Websites -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </span>
+            <h3>Website Development</h3>
+            <p>Modern, responsive, conversion-focused websites — designed to look great and perform even better.</p>
+          </article>
+
+          <!-- Setup & Deployment -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+            </span>
+            <h3>Setup &amp; Deployment</h3>
+            <p>From domain and hosting to live launch — I set up and deploy websites so they go online without a hitch.</p>
+          </article>
+
+          <!-- Maintenance & Support -->
+          <article class="cap-card reveal">
+            <span class="cap-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </span>
+            <h3>Maintenance &amp; Support</h3>
+            <p>Ongoing upkeep, monitoring, and support — so your product stays fast, secure, and up to date.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH SUMMARY ============ -->
+    <section id="technology" class="tech">
+      <div class="container">
+        <div class="tech-head">
+          <span class="section-label reveal">Toolbox</span>
+          <h2 class="section-title reveal">Technology Summary</h2>
+          <p class="section-sub reveal">The tools and technologies I use to build modern, scalable solutions.</p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/html.png" alt="HTML5"></span>
+            <span class="tech-name"><em>HTML</em>5</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/css.png" alt="CSS3"></span>
+            <span class="tech-name"><em>CSS</em>3</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/js.png" alt="JavaScript"></span>
+            <span class="tech-name">JavaScript</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/java.png" alt="Java"></span>
+            <span class="tech-name">Java</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/python.png" alt="Python"></span>
+            <span class="tech-name">Python</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/tensorflow.png" alt="TensorFlow"></span>
+            <span class="tech-name">TensorFlow</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/mysql.png" alt="MySQL"></span>
+            <span class="tech-name">MySQL</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/firebase.png" alt="Firebase"></span>
+            <span class="tech-name">Firebase</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/dialogflow.png" alt="Dialogflow"></span>
+            <span class="tech-name">Dialogflow</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/android-studio.png" alt="Android Studio"></span>
+            <span class="tech-name">Android Studio</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/github.png" alt="GitHub"></span>
+            <span class="tech-name">GitHub</span>
+          </div>
+          <div class="tech-card reveal">
+            <span class="tech-icon"><img src="images/docker.png" alt="Docker"></span>
+            <span class="tech-name">Docker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES ============ -->
+    <section id="portfolio" class="case-studies">
+      <div class="container">
+        <div class="case-head">
+          <span class="section-label reveal">Selected work</span>
+          <h2 class="section-title reveal">Case Studies</h2>
+          <p class="section-sub reveal">A closer look at real-world problems I've helped solve.</p>
+        </div>
+
+        <div class="case-list">
+
+          <!-- Glyntown Care Centre -->
+          <article class="case-card reveal">
+            <figure class="case-media">
+              <img src="images/glyntowncare.png" alt="Glyntown Care Centre website preview" loading="lazy">
+            </figure>
+            <div class="case-body">
+              <h3>Glyntown Care Centre</h3>
+              <div class="case-block">
+                <span class="case-block-label">Challenges</span>
+                <p>The website suffers from outdated design, unclear information, security flaws, and SEO neglect.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label">Objectives</span>
+                <p>Redesign and modernise the website, improve information accessibility, implement an SSL certificate, and optimise for SEO.</p>
+              </div>
+              <div class="case-tech" aria-label="Technologies used">
+                <img src="images/html.png" alt="HTML5">
+                <img src="images/css.png" alt="CSS3">
+                <img src="images/js.png" alt="JavaScript">
+                <img src="images/python.png" alt="Python">
+              </div>
+              <a href="case-study/glyntowncare" class="case-link">
+                Read the case study
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Recless Reviews -->
+          <article class="case-card reveal">
+            <figure class="case-media">
+              <img src="images/reclessreviews.png" alt="Recless Reviews platform preview" loading="lazy">
+            </figure>
+            <div class="case-body">
+              <h3>Recless Reviews</h3>
+              <div class="case-block">
+                <span class="case-block-label">Challenges</span>
+                <p>The web platform built on WordPress features an outdated design and unclear content.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label">Objectives</span>
+                <p>Modernize the WordPress-based platform by improving its design and enhancing content clarity.</p>
+              </div>
+              <a href="case-study/reclessreviews" class="case-link">
+                Read the case study
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Mou -->
+          <article class="case-card reveal">
+            <figure class="case-media">
+              <img src="https://raw.githubusercontent.com/raphaeldiezmo/Mou/refs/heads/main/logo/Mou.png" alt="Mou AI project logo" loading="lazy">
+            </figure>
+            <div class="case-body">
+              <h3>Mou — AI Game Automation</h3>
+              <div class="case-block">
+                <span class="case-block-label">Challenges</span>
+                <p>Develop an AI system for MMORPG hunting automation that detects target items, automates inputs, and adapts to dynamic in-game environments.</p>
+              </div>
+              <div class="case-block">
+                <span class="case-block-label">Objectives</span>
+                <p>Automate target detection, input actions, and adaptation to dynamic MMORPG environments.</p>
+              </div>
+              <div class="case-tech" aria-label="Technologies used">
+                <img src="images/java.png" alt="Java">
+                <img src="images/docker.png" alt="Docker">
+                <img src="images/python.png" alt="Python">
+              </div>
+              <a href="case-study/mou" class="case-link">
+                Read the case study
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer class="footer">
+    <div class="container">
+
+      <section id="contact" class="contact">
+        <span class="section-label section-label--center reveal">Contact</span>
+        <h2 class="reveal">Let's build something <span class="gradient-text">great together</span></h2>
+        <p class="section-sub reveal" style="margin-inline:auto">
+          Feel free to contact me anytime. I'll respond to you as soon as I can.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-item reveal">
+            <span>Email</span>
+            <a href="mailto:raphaeldiezmo@gmail.com">raphaeldiezmo@gmail.com</a>
+          </div>
+          <div class="contact-item reveal">
+            <span>Mobile</span>
+            <a href="tel:+353851748323">+353 85 174 8323</a>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <a href="https://instagram.com/raphaeldiezmo" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </a>
+          <a href="https://facebook.com/ezmmo" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/raphael-di-ezmo-2b5773203/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v2a6 6 0 0 1 2-2z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <div class="footer-bottom">
+        <span>© 2022 — Raphael Di Ezmo.</span>
+        <span class="made-with">Made with a <span>complete minimalist</span> design</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
+
