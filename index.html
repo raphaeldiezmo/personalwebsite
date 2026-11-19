@@ -77,7 +77,6 @@
       position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
       overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
     }
-    .heart { display: inline-block; margin-left: .25em; color: var(--rose); -webkit-text-fill-color: #f06b78; animation: heartbeat 1.8s ease-in-out infinite; }
     footer {
       width: 100%; padding-top: 25px; border-top: 1px solid rgba(240,216,213,.18);
       color: #c9aaa9; text-align: center; font: 500 .67rem/1.6 system-ui, sans-serif;
@@ -90,7 +89,6 @@
     @keyframes bloom-open { 0% { opacity: 0; transform: scale(.08) rotate(-24deg); } 70% { opacity: 1; transform: scale(1.12) rotate(5deg); } 100% { opacity: 1; transform: scale(1) rotate(0); } }
     @keyframes flower-sway { 0%,100% { transform: rotate(-1.1deg); } 50% { transform: rotate(1.1deg); } }
     @keyframes shimmer { 0%,100% { opacity: .38; transform: scale(.8); } 50% { opacity: .95; transform: scale(1.12); } }
-    @keyframes heartbeat { 0%,100% { transform: scale(1); } 12% { transform: scale(1.22); } 24% { transform: scale(1); } 36% { transform: scale(1.13); } }
     @media (min-height: 820px) { .page { padding-top: 7vh; padding-bottom: 30px; } .bouquet { width: min(100%, 820px); max-height: 70svh; } }
     @media (max-width: 420px) {
       .page { padding: 34px 18px 20px; }
@@ -166,7 +164,7 @@
 
         <g fill="#f3c36b"><path class="sparkle" d="M91 170q3 10 13 13-10 3-13 13-3-10-13-13 10-3 13-13Z"/><path class="sparkle" d="M509 177q2 8 10 10-8 2-10 10-2-8-10-10 8-2 10-10Z"/><circle class="sparkle" cx="104" cy="294" r="4"/><circle class="sparkle" cx="493" cy="310" r="3"/></g>
       </svg>
-      <p class="note"><span class="typed-message" aria-hidden="true">I love you</span><span class="sr-only">I love you. Обичам те.</span><span class="heart" aria-hidden="true">♥</span></p>
+      <p class="note"><span class="typed-message" aria-hidden="true">I love you</span><span class="sr-only">I love you. Обичам те.</span></p>
     </main>
     <footer>— Raphael Di Ezmo</footer>
   </div>
